@@ -22,3 +22,19 @@
 |RGB_VAD||Decrease value|✔|✔|✔|✔|
 |RGB_SPI||Increase effect speed|✔|✔|✔|✔|
 |RGB_SPD||Decrease effect speed|✔|✔|✔|✔|
+
+## In your `keymap.rb`
+
+```
+rgb = RGB.new(
+  0,    # pin number
+  6,    # size of underglow pixel
+  21,   # size of backlight pixel
+  false # 32bit data will be sent to a pixel if true while 24bit if false
+)
+rgb.effect     = :breath
+rgb.speed      = 31  # 1-31  / default: 22
+rgb.hue        = 10  # 0-100 / default: 0
+rgb.saturation = 100 # 0-100 / default: 100
+rgb.max_value  = 10  # 1-31  / default: 13
+```
