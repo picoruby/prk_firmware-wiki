@@ -18,4 +18,3 @@ kbd.mutual_uart_at_my_own_risk = true
 - Turning on `Keyboard#mutual_uart_at_my_own_risk` is an **experimental** feature
   - It may make the keyboard unstable and may **break your chip**🔥
 - Make sure to disconnect the TRS(TRRS) cable when you change this option. Reconnect it after changing BOTH halves
-- Keys RGB_xxx are working on the partner half only when you use this option
