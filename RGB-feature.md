@@ -1,3 +1,7 @@
+## Valid version
+
+0.9.6+
+
 ## Effect modes:
 - `:swirl`
 - `:rainbow_mood`
