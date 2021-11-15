@@ -4,7 +4,7 @@
 
 ## Feature
 - Syncs RGB blinking between both halves
-- Keycodes related to RGB (see [RGB-feature](https://github.com/picoruby/prk_firmware/wiki/RGB-feature)) work on the partner half
+- Keycodes related to RGB (see [RGB-feature](https://github.com/picoruby/prk_firmware/wiki/RGB-feature)) work on not only anchor but also partner half
 
 ## In your `keymap.rb`
 
