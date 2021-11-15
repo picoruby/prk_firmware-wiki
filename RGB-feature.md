@@ -11,7 +11,7 @@
 ## Keycodes:
 |keycode|alias|functionality|swirl|rainbow_mood|breath|nokogiri|
 | ---- | ---- | ---- | :--: | :--: | :--: | :--: |
-|RGB_TOG||Toggle On or Off|||||
+|RGB_TOG||Toggle On and Off|||||
 |RGB_MODE_FORWARD|RGB_MOD|Cycle through modes|||||
 |RGB_MODE_REVERSE|RGB_RMOD|Reverse direction of _FORWARD|||||
 |RGB_HUI||Increase hue (tone)|||✔|✔|
