@@ -25,7 +25,7 @@
 
 ## In your `keymap.rb`
 
-```
+```ruby
 rgb = RGB.new(
   0,    # pin number
   6,    # size of underglow pixel
