@@ -37,4 +37,6 @@ rgb.speed      = 31  # 1-31  / default: 22
 rgb.hue        = 10  # 0-100 / default: 0
 rgb.saturation = 100 # 0-100 / default: 100
 rgb.max_value  = 10  # 1-31  / default: 13
+
+kbd.append rgb # `kbd` is an instance of Keyboard class that should be newed in advance
 ```
