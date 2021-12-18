@@ -23,6 +23,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Setup
+        env:
+          WIKI_DEPLOY_KEY: ${{secrets.WIKI_DEPLOY_KEY}}
         run: |
           echo "$WIKI_DEPLOY_KEY" > ~/deploy_key.pem
           chmod 600 ~/deploy_key.pem
