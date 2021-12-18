@@ -8,7 +8,7 @@ There are two possibilities from where you see this README:
 
 If you want to add a new description or found a TYPO in wiki pages of `picoruby/prk_firmware`, do not hesitate to send a pull request to [picoruby/prk_firmware-wiki](https://github.com/picoruby/prk_firmware-wiki).
 
-## Guidlines
+## Guidelines
 
 - Each document should be written in Markdown and located in the top directory of the `picoruby/prk_firmware-wiki` repository
 - Photos and illustrations should be located in `images/` directory of `picoruby/prk_firmware-wiki`
