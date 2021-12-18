@@ -1,8 +1,12 @@
 # prk_firmware-wiki
 
-This is the repository to maintian the documentation of PRK Firmware which can be seen on [picoruby/prk_firmware/wiki](https://github.com/picoruby/prk_firmware/wiki).
+This is the documentation of [PRK Firmware](https://github.com/picoruby/prk_firmware).
 
-If you want to add a new description or found a TYPO, do not hesitate to send a pull request to this repository.
+There are two possibilities from where you see this README:
+- If you are on `https://github.com/picoruby/prk_firmware-wiki/`, it's the right place to send a pull request :)
+- Otherwise, you are probably in `https://github.com/picoruby/prk_firmware/wiki`, this is a copy of the original README
+
+If you want to add a new description or found a TYPO in wiki pages of `picoruby/prk_firmware`, do not hesitate to send a pull request to this repository.
 
 ## Guidlines
 
