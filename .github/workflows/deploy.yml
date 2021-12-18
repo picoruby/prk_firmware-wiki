@@ -22,6 +22,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Setup
         env:
           WIKI_DEPLOY_KEY: ${{secrets.WIKI_DEPLOY_KEY}}
@@ -35,5 +37,5 @@ jobs:
         uses: mxschmitt/action-tmate@v3
       - name: Deploy
         env:
-          GIT_SSH_COMMAND: ssh -vvv -i ~/deploy_key.pem -o StrictHostKeyChecking=no -F /dev/null
+          GIT_SSH_COMMAND: ssh -i ~/deploy_key.pem -o StrictHostKeyChecking=no -F /dev/null
         run: git push origin master
