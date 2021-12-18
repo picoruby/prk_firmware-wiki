@@ -29,6 +29,8 @@ jobs:
           git config --global user.email "hasumikin@gmail.com"
           git config --global user.name "hasumikin"
           git config remote.origin.url "git@github.com:picoruby/prk_firmware.wiki.git"
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
       - name: Deploy
         env:
           GIT_SSH_COMMAND: ssh -vvv -i ~/deploy_key.pem -o StrictHostKeyChecking=no -F /dev/null
