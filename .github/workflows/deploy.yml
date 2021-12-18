@@ -22,11 +22,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Deploy
+      - name: Setup
         run: |
           echo "$WIKI_DEPLOY_KEY" > ~/deploy_key.pem
           chmod 600 ~/deploy_key.pem
           git config --global user.email "hasumikin@gmail.com"
           git config --global user.name "hasumikin"
           git config remote.origin.url "git@github.com:picoruby/prk_firmware.wiki.git"
-          git push origin master
+      - name: Deploy
+        env:
+          GIT_SSH_COMMAND: ssh -i ~/deploy_key.pem -o StrictHostKeyChecking=no -F /dev/null
+        run: git push origin master
