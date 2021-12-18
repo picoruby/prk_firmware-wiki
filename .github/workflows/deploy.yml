@@ -27,6 +27,6 @@ jobs:
           echo "$WIKI_DEPLOY_KEY" > ~/deploy_key.pem
           chmod 600 ~/deploy_key.pem
           git config --global user.email "hasumikin@gmail.com"
-          git confir --global user.name "hasumikin"
+          git config --global user.name "hasumikin"
           git config remote.origin.url "git@github.com:picoruby/prk_firmware.wiki.git"
           git push origin master
