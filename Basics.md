@@ -4,6 +4,10 @@
 kbd = Keyboard.new
 ```
 
+See Also:
+
+- [Split keyboard](Split-keyboard)
+
 ## Initialize GPIO assign
 
 ```ruby
