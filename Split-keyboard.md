@@ -56,3 +56,20 @@ kbd.add_layer :default  %i(
 )
 kbd.start!
 ```
+
+## Note
+
+The default assumption is that the USB connection is on the left hand side.
+
+Add a note to write kbd.set_anchor(:right) for USB connection on the right hand side.
+
+If you want to connect the USB to the right hand side, write as follows:
+
+```ruby
+kbd.set_anchor(:right)
+```
+
+## Sample code
+
+- [picoruby/prk_crkbd/keymap.rb](https://github.com/picoruby/prk_crkbd/blob/main/keymap.rb)
+
