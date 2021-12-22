@@ -1,0 +1,61 @@
+## Initialize keyboard
+
+```ruby
+kbd = Keyboard.new
+```
+
+## Initialize GPIO assign
+
+```ruby
+kbd.init_pins(
+  [ 1  2  3  4  5 ]                               # row0  row1 ... respectively
+  [ 6  7  8  9  29  28  27  26  22  20  23  21 ]  # col0  col1 ... respectively
+)
+```
+
+See Also:
+
+- [Direct scan](Direct-scan)
+
+## Set keymap and layers
+
+```ruby
+kbd.add_layer :default  %i(
+  KC_GRV   KC_1     KC_2     KC_3     KC_4     KC_5     KC_6     KC_7     KC_8     KC_9     KC_0     KC_BSPC 
+  KC_ESC   KC_Q     KC_W     KC_E     KC_R     KC_T     KC_Y     KC_U     KC_I     KC_O     KC_P     KC_DEL 
+  KC_TAB   KC_A     KC_S     KC_D     KC_F     KC_G     KC_H     KC_J     KC_K     KC_L     KC_SCLN  KC_QUOT 
+  KC_CAPS  KC_Z     KC_X     KC_C     KC_V     KC_B     KC_N     KC_M     KC_COMM  KC_DOT   KC_SLSH  KC_RSFT 
+  KC_LSFT  KC_LCTL  KC_LALT  KC_LGUI  LOWER    KC_SPC   KC_ENT   RAISE    KC_LEFT  KC_DOWN  KC_UP    KC_RGHT
+)
+kbd.add_layer :raise, %i(
+  KC_F1    KC_F2    KC_F3    KC_F4    KC_F5    KC_F6    KC_F7    KC_F8    KC_F9    KC_F10   KC_F11   KC_F12
+  KC_GRV   KC_EXLM  KC_AT    KC_HASH  KC_DLR   KC_PERC  KC_CIRC  KC_AMPR  KC_ASTER KC_LPRN  KC_RPRN  KC_MINS
+  KC_TAB   KC_LABK  KC_LCBR  KC_LBRC  KC_LPRN  KC_QUOT  KC_LEFT  KC_DOWN  KC_UP    KC_RIGHT KC_UNDS  KC_PIPE
+  KC_LSFT  KC_RABK  KC_RCBR  KC_RBRC  KC_RPRN  KC_DQUO  KC_TILD  KC_BSLS  KC_COMMA KC_DOT   KC_SLSH  KC_RSFT
+  KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO
+)
+kbd.add_layer :lower, %i(
+  KC_F1    KC_F2    KC_F3    KC_F4    KC_F5    KC_F6    KC_F7    KC_F8    KC_F9    KC_F10   KC_F11   KC_F12
+  KC_ESC   KC_1     KC_2     KC_3     KC_4     KC_5     KC_6     KC_7     KC_8     KC_9     KC_0     KC_MINS
+  KC_TAB   KC_F2    KC_F10   KC_F12   KC_LPRN  KC_QUOT  KC_DOT   KC_4     KC_5     KC_6     KC_PLUS  KC_BSPC
+  KC_LSFT  KC_RABK  KC_RCBR  KC_RBRC  KC_RPRN  KC_DQUO  KC_0     KC_1     KC_2     KC_3     KC_SLSH  KC_COMM
+  KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO    KC_NO
+)
+
+#                   Your custom     Keycode or             Keycode (only modifiers)      Release time      Re-push time
+#                   key name        Array of Keycode       or Layer Symbol to be held    threshold(ms)     threshold(ms)
+#                                   or Proc                or Proc which will run        to consider as    to consider as
+#                                   when you click         while you keep press          `click the key`   `hold the key`
+kbd.define_mode_key :RAISE,       [ nil,                   :raise,                       nil,              nil ]
+kbd.define_mode_key :LOWER,       [ nil,                   :lower,                       nil,              nil ]
+```
+
+See Also:
+
+- [Keycodes](Keycodes)
+
+## Run firmware
+
+```ruby
+kbd.start!
+```
