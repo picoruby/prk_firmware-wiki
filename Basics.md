@@ -4,10 +4,6 @@
 kbd = Keyboard.new
 ```
 
-See Also:
-
-- [Split keyboard](Split-keyboard)
-
 ## Initialize GPIO assign
 
 ```ruby
@@ -16,10 +12,6 @@ kbd.init_pins(
   [ 6  7  8  9  29  28  27  26  22  20  23  21 ]  # col0  col1 ... respectively
 )
 ```
-
-See Also:
-
-- [Direct scan](Direct-scan)
 
 ## Set keymap and layers
 
@@ -53,10 +45,6 @@ kbd.add_layer :lower, %i(
 kbd.define_mode_key :RAISE,       [ nil,                   :raise,                       nil,              nil ]
 kbd.define_mode_key :LOWER,       [ nil,                   :lower,                       nil,              nil ]
 ```
-
-See Also:
-
-- [Keycodes](Keycodes)
 
 ## Run firmware
 
