@@ -48,7 +48,7 @@ kbd.add_layer :default, %i(
 
 In `Keyboard#init_matrix_pins`, put `nil` where an actual switch doesn't exist.
 `XXXXXXX` should be put where the corresponding places in `Keyboard#add_layer`.
-This convention is mainly to support split-type keyboard though, better to follow it even if using a single PCP type.
+This convention is mainly to support split-type keyboard though, better to follow it even if using a non-split-type one for future compatibility.
 
 ### Relation between `init_pins` and `init_matrix_pins`
 
