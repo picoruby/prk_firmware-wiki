@@ -3,8 +3,8 @@
 |Feature|Version|
 |----|----|
 |Normal matrix|0.9.0+|
-|Direct-scan matrix|0.9.9+|
-|Duplex matrix|0.9.11+|
+|Direct-scan|0.9.9+|
+|Duplex and Round-robin matrix|0.9.11+|
 
 ## Normal matrix
 
@@ -16,7 +16,7 @@ kbd.init_pins(
 )
 ```
 
-## Direct-scan circuit
+## Direct-scan
 
 Direct-scan circuit has no diode and one-to-one correspondence between pins and switches.
 
@@ -36,9 +36,9 @@ kbd.init_pins(
 )
 ```
 
-## Duplex matrix
+## Duplex and Round-robin matrix
 
-When you have a circuit that the image shows:
+Let's say there is a duplex matrix circuit like this:
 
 ![](images/duplex-matrix.png)
 
@@ -67,7 +67,7 @@ kbd.add_layer :default, %i(
 ```
 
 - In `Keyboard#init_matrix_pins`, put `nil` where an actual switch doesn't exist
-- you have to leave blanks in `Keyboard#add_layer` at those positions that correspond to `nil` as the above code shows
+- you have to leave blanks in `Keyboard#add_layer` at the positions that correspond to `nil` as the above code shows
 
 ### Relation between `init_pins` and `init_matrix_pins`
 
