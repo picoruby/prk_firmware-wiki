@@ -1,5 +1,6 @@
-## Feature
-- Supports split type keyboards
+## Valid version
+
+0.9.0+
 
 ## In your `keymap.rb`
 
@@ -10,15 +11,15 @@ kbd.uart_pin = 1 # See below.
 ```
 
 `kbd.uart_pin` is 1 by default, so you don't need to explicitly write it if you use GPIO1 for the connection.
-In that case, all you have to do is to write `kbd.split = true` before `kbd.init_pins`.
+In that case, all you have to do is to write `kbd.split = true` before `kbd.init_matrix_pins` or `kbd.init_pins`.
 
-The pins that can be set to kbd.uart_pin are those that have the function "UART0 RX" of the RP2040.
+The pins that can be set to `kbd.uart_pin` are those that have the function "UART0 RX" of the RP2040.
 
 - Raspberry Pi Pico: 1, 13 and 17
 - Sparkfan Pro Micro RP2040: 1 and 29
 - Other RP2040-based microcontrollers: All or some of 1, 13, 17 and 29 depending on their spec
 
-If you use a GPIO number other than above, you need to use the Mutual UART feature implemented in the software UART.
+If you use a GPIO number other than above, you need to use the Mutual UART feature implemented in software UART.
 
 See [Mutual UART communication](Mutual-UART-communication)
 
