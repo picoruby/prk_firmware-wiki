@@ -1,10 +1,18 @@
-* [[Basics]]
+* Getting started
+  * [[Tutorial]]
+  * [[Basic-keymap]]
+  * [[Building-a-binary]]
 * Keyboard features
   * [[Keycodes]]
-  * [[Split-keyboard]]
+  * [[Split-type-keyboard]]
     * [[Mutual-UART-communication]]
   * [[Keyscan-matrix]]
 * Other features
   * [[RGB-feature]]
-* For those who want to contribute
+  * [[Debug-print]]
+* Hardware
+  * [[Microcontroller-boards]]
+  * [[Keyboards-working-with-PRK]]
+* Contributing the Wiki
   * [[README]]
+* [[FAQ]]
