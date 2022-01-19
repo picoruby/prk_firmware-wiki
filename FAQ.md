@@ -10,6 +10,16 @@
   >
   > In this case, you may want to not hook up the RAW pin at all.
 
-- Q: PRK Firmware no longer works after pulling the newest master branch, why?
+- Q: "PRKFirmware" drive is no longer mounted after installing the newest release, why?
 
-  A: It likely happens when submodules like PicoRuby were also updated, try `git submodule update --recursive`. Besides, PRK may get a breaking change as it is still a beta version. Take a good look at [CHANGELOG.md](CHANGELOG.md)
+  A: The data in the flash ROM of RP2040 occasionally brakes for some reason.
+
+  Try downloading `flush_nuke.uf2` from the following page and installing it in "RPI-RP2" drive (not "PRKFirmware" drive).
+
+  [https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#resetting-flash-memory](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#resetting-flash-memory)
+
+  It initializes the flash ROM and possibly solves your problem.
+
+- Q: The newest release of PRK Firmware no longer works well while it seems to boot successfully, why?
+
+  A: PRK Firmware might get a breaking change. Take a good look at [CHANGELOG.md](https://github.com/picoruby/prk_firmware/blob/master/CHANGELOG.md)
