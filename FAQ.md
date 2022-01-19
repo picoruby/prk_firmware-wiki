@@ -14,7 +14,7 @@
 
   A: The data in the flash ROM of RP2040 occasionally brakes for some reason.
 
-  Try downloading `flush_nuke.uf2` from the following page and installing it in "RPI-RP2" drive (not "PRKFirmware" drive).
+  Try downloading `flash_nuke.uf2` from the following page and installing it in "RPI-RP2" drive (not "PRKFirmware" drive).
 
   [https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#resetting-flash-memory](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#resetting-flash-memory)
 
