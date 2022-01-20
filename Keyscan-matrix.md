@@ -55,7 +55,7 @@ col1 = 5
 kbd.init_matrix_pins(
   [
     [ [row0, col0], [col0, row0], [row0, col1], [col1, row0] ],
-    [ [row1, col0], [col0, row1], [row1, col1], [col1, row1] ]
+    [ [row1, col0], [col0, row1], [row1, col1], [col1, row1] ],
     [          nil, [col0, row2], [row2, col1],          nil ]
   ]
 )
@@ -68,6 +68,36 @@ kbd.add_layer :default, %i(
 
 - In `Keyboard#init_matrix_pins`, put `nil` where an actual switch doesn't exist
 - you have to leave blanks in `Keyboard#add_layer` at the positions that correspond to `nil` as the above code shows
+
+### You can actually omit `nil` as below though,
+
+```ruby
+kbd.init_matrix_pins(
+  [
+    [ [row0, col0], [col0, row0], [row0, col1], [col1, row0] ],
+    [ [row1, col0], [col0, row1], [row1, col1], [col1, row1] ],
+    [               [col0, row2], [row2, col1]               ]
+  ]
+)
+```
+
+putting `nil` is mandatory if your keyboard is a split-type:
+
+```ruby
+kbd.split = true
+kbd.init_matrix_pins(
+  [
+    [ [row0, col0], [col0, row0], [row0, col1], [col1, row0] ],
+    [ [row1, col0], [col0, row1], [row1, col1], [col1, row1] ],
+    [          nil, [col0, row2], [row2, col1],          nil ]
+  ]
+)
+kbd.add_layer :default, %i(
+      KC_1          KC_2          KC_3          KC_4         KC_5          KC_6          KC_7          KC_8
+      KC_A          KC_B          KC_C          KC_D         KC_E          KC_F          KC_G          KC_H
+                    KC_SPACE      KC_ENTER                                 KC_RCTL       KC_RALT
+)
+```
 
 ### Relation between `init_pins` and `init_matrix_pins`
 
