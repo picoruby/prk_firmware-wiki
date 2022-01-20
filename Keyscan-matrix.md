@@ -55,8 +55,8 @@ col1 = 5
 kbd.init_matrix_pins(
   [
     [ [row0, col0], [col0, row0], [row0, col1], [col1, row0] ],
-    [          nil, [col0, row1], [row1, col1],          nil ]
-    [ [row2, col0], [col0, row2], [row2, col1], [col1, row2] ],
+    [          nil, [col0, row1], [row1, col1],          nil ],
+    [ [row2, col0], [col0, row2], [row2, col1], [col1, row2] ]
   ]
 )
 kbd.add_layer :default, %i(
@@ -76,8 +76,8 @@ kbd.split = true
 kbd.init_matrix_pins(
   [
     [ [row0, col0], [col0, row0], [row0, col1], [col1, row0] ],
-    [          nil, [col0, row1], [row1, col1],          nil ]
-    [ [row2, col0], [col0, row2], [row2, col1], [col1, row2] ],
+    [          nil, [col0, row1], [row1, col1],          nil ],
+    [ [row2, col0], [col0, row2], [row2, col1], [col1, row2] ]
   ]
 )
 kbd.add_layer :default, %i(
