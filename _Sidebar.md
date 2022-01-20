@@ -13,6 +13,6 @@
 * Hardware
   * [[Microcontroller-boards]]
   * [[Keyboards-working-with-PRK]]
-* Contributing the Wiki
+* Contribute to the Wiki
   * [[README]]
 * [[FAQ]]
