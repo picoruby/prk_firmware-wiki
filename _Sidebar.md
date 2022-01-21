@@ -9,6 +9,7 @@
     * [[Mutual-UART-communication]]
   * [[Keyscan-matrix]]
 * Other features
+  * [[Rotary-encoder]]
   * [[RGB-feature]]
   * [[Debug-print]]
 * Hardware
