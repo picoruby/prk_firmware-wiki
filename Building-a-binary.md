@@ -8,7 +8,7 @@
     - Make sure you have `PICO_SDK_PATH` environment variable
 
 
-- Clone the `prk_firmware` (this repository) wherever you like
+- Clone the `prk_firmware` wherever you like
 
     ```
     git clone --recursive https://github.com/picoruby/prk_firmware.git # Don't forget --recursive
@@ -40,11 +40,11 @@ If so, you can build a binary including your keymap.rb in this way:
 - Clone a keymap repository, for example, "meishi2" which is a 2x2 matrix card-shaped keyboard in `keyboards` directory
 
     ```
-    cd keyboards
+    cd prk_firmware/keyboards
     git clone https://github.com/picoruby/prk_meishi2.git
     ```
 
-- (Option) Edit `prk_meishi2/keymap.rb` as you wish
+- (Optional) Edit `prk_meishi2/keymap.rb` as you wish
 
 - Build with `cmake` and `make`
 
