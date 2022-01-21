@@ -9,7 +9,7 @@ First of all, you should:
 
 - Unzip it. You should get a file that looks like `prk_firmware-0.9.0-20210910-xxxxxxxx.uf2`
 
-- Flash the uf2 into RP2040
+- Flash the uf2 into RP2040 in BOOTSEL mode
 
   ![](images/drag_and_drop_1.png)
 
@@ -18,3 +18,7 @@ First of all, you should:
   ![](images/drag_and_drop_2.png)
 
 Your keyboard will automatically reboot. Enjoy!
+
+----
+
+Tip: RP2040 in which PRK Firmware is already installed can reboot to BOOTSEL mode by double-pressing the RESET button without detaching the USB cable.
