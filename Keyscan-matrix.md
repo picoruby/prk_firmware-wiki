@@ -1,4 +1,4 @@
-## Valid version
+# # Valid version
 
 |Feature|Version|
 |----|----|
@@ -42,7 +42,7 @@ Let's say there is a duplex matrix circuit like this:
 
 ![](images/duplex-matrix.png)
 
-You can configure pins in this way:
+You can configure the pins and layers as follows:
 
 ```ruby
 # The actual pin numbers depend on your circuit
@@ -67,7 +67,7 @@ kbd.add_layer :default, %i(
 ```
 
 - In `Keyboard#init_matrix_pins`, put `nil` where an actual switch doesn't exist
-- you have to leave blanks in `Keyboard#add_layer` at the positions that correspond to `nil` as the above code shows
+- You have to leave blanks in `Keyboard#add_layer` at the positions that correspond to `nil` as the above code shows
 
 ### Split-type keyboard
 
@@ -86,6 +86,8 @@ kbd.add_layer :default, %i(
       KC_LSFT       KC_LALT       KC_LCTL       KC_SPACE     KC_ENTER      KC_BSPACE     KC_RGUI       KC_RSFT
 )
 ```
+
+Also, `kbd.split_style = :right_side_flipped_split` should work. See [[Right-side-flipped-split]]
 
 ### Relation between `init_pins` and `init_matrix_pins`
 

@@ -5,6 +5,7 @@
 * Keyboard features
   * [[Keycodes]]
   * [[Split-type-keyboard]]
+    * [[Right-side-flipped-split]]
     * [[Mutual-UART-communication]]
   * [[Keyscan-matrix]]
 * Other features
