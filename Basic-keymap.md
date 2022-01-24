@@ -19,7 +19,7 @@ kbd = Keyboard.new
 
 ```ruby
 kbd.init_pins(
-  [ 1  2  3  4  5 ]                               # row0  row1 ... respectively
+  [ 1  2  3  4  5 ],                              # row0  row1 ... respectively
   [ 6  7  8  9  29  28  27  26  22  20  23  21 ]  # col0  col1 ... respectively
 )
 ```
