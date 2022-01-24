@@ -4,16 +4,17 @@
   - If you aren't sure whether your keymap.rb includes BOM, let's [google "BOM check"](https://www.google.com/search?q=bom+check)
 - Currently, PRK can only process keymap.rb smaller than 4 KB (4096 Bytes)
   - You may reduce the size by eliminating comment lines that start with `#`
+  - Find more information about ["Code Comments" page in docs.ruby-lang.org](https://docs.ruby-lang.org/en/master/doc/syntax/comments_rdoc.html)
 
 ## keymap.rb as a simple example
 
-### Initialize keyboard
+### Initialize a keyboard
 
 ```ruby
 kbd = Keyboard.new
 ```
 
-### Initialize GPIO assign
+### Initialize GPIO pins
 
 ```ruby
 kbd.init_pins(
@@ -22,7 +23,7 @@ kbd.init_pins(
 )
 ```
 
-### Set keymap and layers
+### Configure layers
 
 ```ruby
 kbd.add_layer :default  %i(
@@ -55,9 +56,8 @@ kbd.define_mode_key :RAISE,       [ nil,                   :raise,              
 kbd.define_mode_key :LOWER,       [ nil,                   :lower,                       nil,              nil ]
 ```
 
-### Run firmware
+### Run the keyboard
 
 ```ruby
 kbd.start!
 ```
-
