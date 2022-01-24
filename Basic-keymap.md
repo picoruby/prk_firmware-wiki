@@ -1,10 +1,10 @@
 ## Important points
 
-- The encoding of keymap.rb has to be "UTF-8 without BOM"
+- The encoding of keymap.rb has to be basically "ASCII" though, "UTF-8 without BOM" should be also valid as far as multibyte characters are only used in comment lines
   - If you aren't sure whether your keymap.rb includes BOM, let's [google "BOM check"](https://www.google.com/search?q=bom+check)
 - Currently, PRK can only process keymap.rb smaller than 4 KB (4096 Bytes)
   - You may reduce the size by eliminating comment lines that start with `#`
-  - Find more information about ["Code Comments" in docs.ruby-lang.org](https://docs.ruby-lang.org/en/master/doc/syntax/comments_rdoc.html)
+- Find more information about ["Code Comments" in docs.ruby-lang.org](https://docs.ruby-lang.org/en/master/doc/syntax/comments_rdoc.html)
 
 ## keymap.rb as a simple example
 
