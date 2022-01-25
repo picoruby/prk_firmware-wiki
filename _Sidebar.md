@@ -1,6 +1,7 @@
 * Getting started
   * [[Tutorial]]
   * [[Basics-of-keymap.rb]]
+  * [[Syntax-checking-of-keymap.rb]]
   * [[Building-a-binary]]
 * Keyboard features
   * [[Keycodes]]
