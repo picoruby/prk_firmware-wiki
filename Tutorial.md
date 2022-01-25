@@ -3,29 +3,29 @@ First of all, you should:
 - Be knowledgeable how to install a UF2 file into Raspi Pico on [https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-c](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-c)
   - [https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide](https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide) will also be helpful if you use Sparkfun Pro Micro RP2040
 
-## Use a release binary
+## Let's try it!
 
 - Download the newest release binary from [Releases](https://github.com/picoruby/prk_firmware/releases)
 
 - Unzip it. You should get a file that looks like `prk_firmware-0.9.0-20210910-xxxxxxxx.uf2`
 
-- Flash the uf2 into RP2040 in BOOTSEL mode
+- Drag and drop the uf2 file into the `RPI-RP2` drive which BOOTSEL-mode RP2040 mounts
 
   ![](images/drag_and_drop_1.png)
 
-- `PRKFirmware` mass storage drive should be mounted, then drag and drop your `keymap.rb`
+- `RPI-RP2` drive will disappear, after a few seconds, `PRKFirmware` mass storage drive will automatically mount instead
+-
+- Drag and drop your `keymap.rb` into the `PRKFirmware` drive
 
   ![](images/drag_and_drop_2.png)
 
-The PRK Firmware will automatically reload your `keymap.rb`. Enjoy!
+PRK Firmware will automatically reload the `keymap.rb`. Enjoy!
 
-----
-
-Tip: RP2040 in which PRK Firmware is already installed can reboot to BOOTSEL mode by double-pressing the RESET button without detaching the USB cable.
-
-## Points that beginners are likely confused
+## Points you should know
 
 - Dragging and dropping `keymap.rb` does not unmount the `PRKFirmware` drive
 - Reloading `keymap.rb` takes five to seven seconds depending on the `keymap.rb` and the circuit
-- It looks nothing happened even if a new `keymap.rb` was successfully reloaded especially in case your keyboard doesn't have RGBLED on it. But the new keymap should have been applied if there is no trouble with the `keymap.rb`
-- If your `keymap.rb` doesn't work well, [[Debug-print]] page may help you
+- It looks nothing happened even if a new `keymap.rb` was successfully reloaded especially in case your keyboard doesn't have RGBLED on it. But the new configuration should have been applied if there is no trouble with the `keymap.rb`
+- If your `keymap.rb` doesn't work, [[Debug-print]] page may help you
+- When you want to install a new uf2 file, make sure the mass storage drive is `RPI-RP2`, not `PRKFirmware`
+- RP2040 in which PRK Firmware is already installed can reboot to BOOTSEL mode and mount `RPI-RP2` drive by double-pressing the RESET button without detaching the USB cable
