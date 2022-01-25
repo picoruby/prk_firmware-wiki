@@ -17,8 +17,15 @@ First of all, you should:
 
   ![](images/drag_and_drop_2.png)
 
-Your keyboard will automatically reboot. Enjoy!
+The PRK Firmware will automatically reload your `keymap.rb`. Enjoy!
 
 ----
 
 Tip: RP2040 in which PRK Firmware is already installed can reboot to BOOTSEL mode by double-pressing the RESET button without detaching the USB cable.
+
+## Points that beginners are likely confused
+
+- Dragging and dropping `keymap.rb` does not unmount the `PRKFirmware` drive
+- Reloading `keymap.rb` takes five to seven seconds depending on the `keymap.rb` and the circuit
+- It looks nothing happened even if a new `keymap.rb` was successfully reloaded especially in case your keyboard doesn't have RGBLED on it. But the new keymap should have been applied if there is no trouble with the `keymap.rb`
+- If your `keymap.rb` doesn't work well, [[Debug-print]] page may help you
