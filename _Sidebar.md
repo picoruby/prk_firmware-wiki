@@ -11,10 +11,9 @@
   * [[Keyscan-matrix]]
 * Other features
   * [[Rotary-encoder]]
-  * [[RGB-feature]]
+  * [[RGBLED]]
   * [[Debug-print]]
-* Hardware
-  * [[Microcontroller-boards]]
+* Examples
   * [[Keyboards-working-with-PRK]]
 * Contribute to the Wiki
   * [[README]]

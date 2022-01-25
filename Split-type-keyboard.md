@@ -21,7 +21,7 @@ The pins that can be set to `kbd.uart_pin` are those that have the function "UAR
 
 If you use a GPIO number other than above, you need to use the Mutual UART feature implemented in software UART.
 
-See [Mutual UART communication](Mutual-UART-communication)
+See [[Mutual-UART-communication]]
 
 ## Anchor and Partner
 
