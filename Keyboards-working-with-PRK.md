@@ -14,6 +14,12 @@
   - [Runner3680 5x7 version](https://github.com/shugo/prk_runner3680_5x7) - Split-type  
     PICO Micro is equivalent to Pro Micro regarding footprint. But the profile of Pro Micro RP2040 seems too big to be installed into Runner3680.
 
+- XIAO RP2040 : [https://wiki.seeedstudio.com/XIAO-RP2040/](https://wiki.seeedstudio.com/XIAO-RP2040/)
+  - [SU120](https://github.com/e3w2q/su120-keyboard) - Expandable keyboard PCB with up to 120keys
+
+- Adafruit KB2040 : [https://learn.adafruit.com/adafruit-kb2040/](https://learn.adafruit.com/adafruit-kb2040/)
+  - [SU120](https://github.com/e3w2q/su120-keyboard) - Expandable keyboard PCB with up to 120keys
+
 <img src="images/RP2040_boards.jpg" width="400" />
 
 _(left: Raspberry Pi Pico / right: Sparkfun Pro Micro RP2040)_
