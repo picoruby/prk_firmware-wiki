@@ -5,6 +5,8 @@
   * [[Building-a-binary]]
 * Keyboard features
   * [[Keycodes]]
+  * [[Layers-and-mode-key]]
+  * [[Composite key]]
   * [[Split-type-keyboard]]
     * [[Right-side-flipped-split]]
     * [[Mutual-UART-communication]]

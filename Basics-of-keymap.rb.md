@@ -46,15 +46,13 @@ kbd.add_layer :lower, %i(
   KC_ESC  KC_1    KC_2    KC_3    KC_4    KC_5    KC_6    KC_7    KC_8     KC_9     KC_0    KC_MINS
   KC_TAB  KC_F2   KC_F10  KC_F12  KC_LPRN KC_QUOT KC_DOT  KC_4    KC_5     KC_6     KC_PLUS KC_BSPC
   KC_LSFT KC_RABK KC_RCBR KC_RBRC KC_RPRN KC_DQUO KC_0    KC_1    KC_2     KC_3     KC_SLSH KC_COMMA
-  KC_NO   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO    KC_NO    KC_NO   KC_NO
+  CAP_A   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO   KC_NO    KC_NO    KC_NO   KC_NO
 )
 
-#                   Your custom     Keycode or        Keycode (only modifiers)     Release time     Re-push time
-#                   key name        Array of Keycode  or Layer Symbol to be held   threshold(ms)    threshold(ms)
-#                                   or Proc           or Proc which will run       to consider as   to consider as
-#                                   when you click    while you keep press         `click the key`  `hold the key`
-kbd.define_mode_key :RAISE,       [ nil,              :raise,                      nil,             nil ]
-kbd.define_mode_key :LOWER,       [ nil,              :lower,                      nil,             nil ]
+kbd.define_mode_key :RAISE, [ nil, :raise, nil, nil ]
+kbd.define_mode_key :LOWER, [ nil, :lower, nil, nil ]
+
+kbd.define_composite_key :CAP_A, %i(KC_A KC_RSFT)
 ```
 
 ### Start the keyboard
@@ -62,3 +60,9 @@ kbd.define_mode_key :LOWER,       [ nil,              :lower,                   
 ```ruby
 kbd.start!
 ```
+
+## See also
+- [[Keycodes]]
+- [[Layers-and-mode-key]]
+- [[Composite-key]]
+
