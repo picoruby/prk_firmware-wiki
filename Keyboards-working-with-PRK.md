@@ -1,6 +1,7 @@
 - Raspberry Pi Pico : [https://www.raspberrypi.com/products/raspberry-pi-pico/](https://www.raspberrypi.com/products/raspberry-pi-pico/)
   - [PiPi Gherkin](https://github.com/picoruby/prk_pipigherkin) - Small and cute
   - [Lunakey Pico](https://github.com/yoichiro/prk_lunakey_pico) - Split-type
+  - [Shotgun CherryPie](https://github.com/Taro-Hayashi/Shotgun-CherryPie/blob/main/README_EN.md) - Macro pad with rotary encoders and LED
 
 - Sparkfun Pro Micro RP2040 (DEV-18288) : [https://www.sparkfun.com/products/18288](https://www.sparkfun.com/products/18288)
   - [meishi2](https://github.com/picoruby/prk_meishi2) - Four-keys macro pad
