@@ -16,7 +16,7 @@
   * [[RGBLED]]
   * [[Debug-print]]
 * Examples
-  * [[Keyboards-working-with-PRK]]
+  * [[Microcontroller-boards-and-Keyboards]]
 * Contribute to the Wiki
   * [[README]]
 * [[FAQ]]
