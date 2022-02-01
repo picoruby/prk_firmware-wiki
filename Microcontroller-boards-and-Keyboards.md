@@ -20,7 +20,7 @@
 
 <https://booth.pm/en/items/3214808>
 
-- [Runner3680 5x7 version](https://github.com/shugo/prk_runner3680_5x7) <sup>[1](#1)</sup> - Split-type
+- [Runner3680 5x7 version](https://gist.github.com/shugo/5f66fc93c01336e5d934b2bd10fc0d47) <sup>[1](#1)</sup> - Split-type
 
 ## XIAO RP2040
 
