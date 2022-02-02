@@ -3,13 +3,11 @@
 - The encoding of keymap.rb has to be basically "ASCII" though, "UTF-8 without BOM" should be also valid as far as multibyte characters are only used in comment lines
   - In other words, PRK Firmware doesn't work if the keymap.rb is encoded with "UTF-8 with BOM"
   - If you aren't sure whether your keymap.rb includes BOM, let's [google "BOM check"](https://www.google.com/search?q=bom+check)
-- Find more information about ["Code Comments" in docs.ruby-lang.org](https://docs.ruby-lang.org/en/master/doc/syntax/comments_rdoc.html)
 
 ### Known issues
 
 - PRK can only process keymap.rb smaller than 4 KB (4096 Bytes)
   - You may reduce the size by eliminating comment lines that start with `#`
-- The EOL (newline) of `keymap.rb` must not include CR (\r) until [this issue](https://github.com/picoruby/picoruby/issues/77) is fixed. Use only LF (\n) instead
 
 ## keymap.rb as a simple example
 
