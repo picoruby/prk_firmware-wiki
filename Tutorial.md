@@ -29,7 +29,7 @@ PRK Firmware will automatically reload the `keymap.rb`. Enjoy!
 - Dragging and dropping `keymap.rb` does not unmount the `PRKFirmware` drive
 - Reloading `keymap.rb` takes five to seven seconds depending on the `keymap.rb` and the circuit
 - It looks nothing happened even if a new `keymap.rb` was successfully reloaded especially in case your keyboard doesn't have RGBLED on it. But the new configuration should have been applied if there is no trouble with the `keymap.rb`
-- If your `keymap.rb` doesn't work, [[Debug-print]] page may help you
+- If your `keymap.rb` doesn't work, [[Debug print]] page may help you
 
 ### Editing the `keymap.rb`
 

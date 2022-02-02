@@ -87,7 +87,7 @@ kbd.add_layer :default, %i(
 )
 ```
 
-Also, `kbd.split_style = :right_side_flipped_split` should work. See [[Right-side-flipped-split]]
+Also, `kbd.split_style = :right_side_flipped_split` should work. See [[Right-side-flipped split]]
 
 ### Relation between `init_pins` and `init_matrix_pins`
 

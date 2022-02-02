@@ -15,7 +15,7 @@
 
 For example, this keyboard is composed "normal matrix" with five rows and twelve cols.
 
-See [[Keyscan-matrix]] about other types of matrix and direct-scan.
+See [[Keyscan matrix]] about other types of matrix and direct-scan.
 
 ### Initialize a keyboard
 
@@ -71,6 +71,6 @@ kbd.start!
 
 ## See also
 - [[Keycodes]]
-- [[Layers-and-mode-key]]
-- [[Composite-key]]
+- [[Layers and mode key]]
+- [[Composite key]]
 
