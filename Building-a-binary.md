@@ -37,16 +37,17 @@ You may want PRK Firmware not to be a mass storage device in case that your empl
 
 If so, you can build a binary including your keymap.rb in this way:
 
-- Clone a keymap repository, for example, "meishi2" which is a 2x2 matrix card-shaped keyboard in `keyboards` directory
+- Clone a keymap repository, for example, "meishi2" which is a 2x2 matrix card-shaped keyboard in `prk_firmware/keyboards` directory
 
     ```
-    cd prk_firmware/keyboards
+    cd keyboards
     git clone https://github.com/picoruby/prk_meishi2.git
     ```
 
-    (Optional) Edit `prk_meishi2/keymap.rb` as you wish
+- Build
 
     ```
+    cd .. # back to prk_firmware/
     rake build_with_keymap[prk_meishi2]
     ```
 
