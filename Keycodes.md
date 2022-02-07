@@ -52,7 +52,7 @@
 |`:KC_EQUAL`|`:KC_EQL`|`=` and `+`||
 |`:KC_LBRACKET`|`:KC_LBRC`|`[` and `{`||
 |`:KC_RBRACKET`|`:KC_RBRC`|`]` and `}`||
-|`:KC_BSLASH`|`:KC_BSLS`|`\` and `\|`||
+|`:KC_BSLASH`|`:KC_BSLS`|`\` and `|`||
 |`:KC_NONUS_HASH`||Non-US `#` and `~`||
 |`:KC_SCOLON`||`;` and `:`||
 |`:KC_QUOTE`|`:KC_QUOT`|`'` and `"`||
@@ -103,7 +103,7 @@
 |`:KC_KP_9`||Keypad `9` and Page Up||
 |`:KC_KP_0`||Keypad `0` and Insert||
 |`:KC_KP_DOT`||Keypad `.` and Delete||
-|`:KC_NONUS_BSLASH`||Non-US `\` and `\|`||
+|`:KC_NONUS_BSLASH`||Non-US `\` and `|`||
 |`:KC_APPLICATION`||Application||
 |`:KC_POWER`||System Power||
 |`:KC_KP_EQUAL`||Keypad `=`||
@@ -187,7 +187,7 @@ Keycodes with shift key.
 |`:KC_PLUS`||`+`|
 |`:KC_LCBR`||`{`|
 |`:KC_RCBR`||`}`|
-|`:KC_PIPE`||`\|`|
+|`:KC_PIPE`||`|`|
 |`:KC_COLON`||`:`|
 |`:KC_DQUO`||`"`|
 |`:KC_TILD`||`~`|
