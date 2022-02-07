@@ -103,7 +103,7 @@ kbd.init_pins(
 ```ruby
 kbd.init_matrix_pins(
   [
-    [ [1 ,3], [1 ,2] ],
+    [ [1 ,3], [1 ,4] ],
     [ [2 ,3], [2, 4] ],
   ]
 )
