@@ -6,7 +6,7 @@
 |Direct-scan|0.9.9+|
 |Duplex and Round-robin matrix|0.9.11+|
 
-## Normal matrix
+## Normal matrix (Col2Row)
 
 ```ruby
 kbd = Keyboard.new
@@ -15,6 +15,15 @@ kbd.init_pins(
   [ 7, 6, 5, 4, 3, 2 ]  # col0, col1,... respectively
 )
 ```
+
+## Row2Col matrix
+
+PRK Firmware doesn't offer a short-handed way to configure Row2Col matrix as of now though, you can do it with `init_matrix_pins` instead of `init_pins`.
+
+The link below shows an example that runs a Row2Col keyboard:  
+[https://github.com/swanmatch/prk_numatreus/blob/master/keymap.rb](https://github.com/swanmatch/prk_numatreus/blob/master/keymap.rb)
+
+See [Duplex and Round-robin matrix](#duplex-and-round-robin-matrix) for more information about `init_matrix_pins`.
 
 ## Direct-scan
 
