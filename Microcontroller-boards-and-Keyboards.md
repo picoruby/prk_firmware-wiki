@@ -5,6 +5,7 @@
 - [PiPi Gherkin](https://github.com/picoruby/prk_pipigherkin) - Small and cute
 - [Lunakey Pico](https://github.com/yoichiro/prk_lunakey_pico) - Split-type
 - [Shotgun CherryPie](https://github.com/Taro-Hayashi/Shotgun-CherryPie/blob/main/README_EN.md) - Macro pad with rotary encoders and LED
+- [Picobd](https://github.com/MachiaWorks/picobd) - 30% (close to 40%) small keyboard
 
 ## Sparkfun Pro Micro RP2040 (DEV-18288)
 
