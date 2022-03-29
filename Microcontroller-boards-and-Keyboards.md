@@ -6,6 +6,8 @@
 - [Lunakey Pico](https://github.com/yoichiro/prk_lunakey_pico) - Split-type
 - [Shotgun CherryPie](https://github.com/Taro-Hayashi/Shotgun-CherryPie/blob/main/README_EN.md) - Macro pad with rotary encoders and LED
 - [Picobd](https://github.com/MachiaWorks/picobd) - 30% (close to 40%) small keyboard
+- [cool836pico](https://github.com/telzo2000/cool836pico) - 30% alice layout keyboard
+- [cool640](https://github.com/telzo2000/cool640) - 40% ortho splite keyboard
 
 ## Sparkfun Pro Micro RP2040 (DEV-18288)
 
@@ -35,6 +37,11 @@
 
 - Tested with SU120
 
+## Waveshare RP2040-Zero 
+
+<https://www.waveshare.com/rp2040-zero.htm> 
+
+- [cool836rp](https://github.com/telzo2000/cool836rp) - 30% alice layout keyboard
 ----
 
 <a id="1">1.</a> PICO Micro is equivalent to Pro Micro regarding footprint and capability. But the profile of Pro Micro RP2040 seems too big to be installed into Runner3680.
