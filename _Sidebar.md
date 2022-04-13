@@ -6,6 +6,7 @@
 * Keyboard features
   * [[Keycodes]]
   * [[Layers and mode key]]
+  * [[Debounce]]
   * [[Composite key]]
   * [[Split-type keyboard]]
     * [[Right-side-flipped split]]
