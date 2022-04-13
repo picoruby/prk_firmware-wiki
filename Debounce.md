@@ -21,7 +21,8 @@ kbd.set_debounce(:per_key)
 kbd.set_debounce_threshold(70) # Optional. 40(ms) by default
 ```
 
-- If you didn't set any debouncer, `:per_row` debouncer will be used by default
+- If you didn't call `set_debounce`, `:per_row` debouncer will be used by default
+- When you'll call `set_debounce_threshold`, you should call `set_debounce` in advance even if you use the default `:per_row` algorithm
 
 ## What do "symmetric", "eager" and "per row/key" mean?
 
