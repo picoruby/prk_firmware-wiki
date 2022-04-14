@@ -13,7 +13,7 @@ There are three ways of rebooting RP2040 into BOOTSEL mode.
 
 ### Reconnect the USB cable while pressing the BOOTSEL button of the microcontroller board
 
-![](images/boot_button_1.png)
+<img src="https://raw.githubusercontent.com/wiki/picoruby/prk_firmware/images/boot_button_1.png" width="200">
 
 This is eligible no matter what. But I know you feel troublesome.
 
