@@ -16,6 +16,7 @@
   * [[Rotary encoder]]
   * [[RGBLED]]
   * [[Debug print]]
+  * [[BOOTSEL mode of RP2040]]
 * Examples
   * [[Microcontroller boards and Keyboards]]
 * Contribute to the Wiki
