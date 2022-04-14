@@ -38,5 +38,6 @@ PRK Firmware will automatically reload the `keymap.rb`. Enjoy!
 
 ### Upgrading PRK Firmware
 
-- When you want to install a new uf2 file of PRK Firmware, make sure the mass storage drive is `RPI-RP2`, not `PRKFirmware`
-- RP2040 in which PRK Firmware is already installed can reboot to BOOTSEL mode and mount `RPI-RP2` drive by double-pressing the RESET button without detaching the USB cable
+When you want to install a new uf2 file of PRK Firmware, you have to reboot RP2040 into BOOTSEL mode.
+
+See [[BOOTSEL mode of RP2040]] for more information.
