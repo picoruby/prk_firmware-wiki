@@ -19,7 +19,7 @@ This is eligible no matter what. But I know you feel troublesome.
 
 ### Double-pressing the RESET button
 
-- If you should be able to access the RESET button of the microcontroller board (Though Raspi Pico doesn't have a RESET button!)
+- If you are able to access the RESET button of the microcontroller board (Though Raspi Pico doesn't have a RESET button!)
   - Or, The PCB has a RESET button that connects to RP2040's reset circuit
 - Then you can reboot RP2040 to BOOTSEL mode by **double-pressing** any of the RESET button
 - Note that PRK Firmware should have already been installed prior to the above
