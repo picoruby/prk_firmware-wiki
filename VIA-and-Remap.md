@@ -43,7 +43,7 @@ You can get those values in the catalog page of Remap.
 
 At first, search "meishi2" in the catalog page of Remap: ([https://remap-keys.app/catalog?keyword=meishi2](https://remap-keys.app/catalog?keyword=meishi2))
 
-![](images/remap.png)
+<img src="images/remap.png" width="600" />
 
 Then copy VID, PID and name of the keyboard and paste them into `via-conf.txt`.
 
@@ -55,7 +55,7 @@ Note that the file must NOT include any other letter.
 
 Eventually, your "PRKFirmware" drive should look like this:
 
-![](images/via-conf.png)
+<img src="images/via-conf.png" width="300" />
 
 ### Reboot
 
@@ -65,7 +65,7 @@ Rebooting the microcontroller applies `via-conf.txt`.
 
 The configure page of Remap ([https://remap-keys.app/configure](https://remap-keys.app/configure)) will identify your keyboard. Enjoy!
 
-![](images/remap2.png)
+<img src="images/remap2.png" width="300" />
 
 ## Advanced usage
 
