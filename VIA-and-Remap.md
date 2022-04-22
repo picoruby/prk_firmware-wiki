@@ -67,6 +67,12 @@ The configure page of Remap ([https://remap-keys.app/configure](https://remap-ke
 
 <img src="images/remap2.png" width="300" />
 
+## Backup your files (optional)
+
+It is recommended to save a copy of `keymap.rb`, `via-conf.txt` and `via_map.rb` (automatically created by configuring a keymap in Remap) on your local PC because upgrading PRK Firmware is going to remove them.
+
+If you have those three files, you no longer need even Remap the next time. Just dragging and dropping them into "PRKFirmware" drive restores your keymap.
+
 ## Advanced usage
 
 [TBD]
