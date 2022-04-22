@@ -13,6 +13,7 @@
     * [[Mutual UART communication]]
   * [[Keyscan matrix]]
 * Other features
+  * [[VIA and Remap]]
   * [[Rotary encoder]]
   * [[RGBLED]]
   * [[Debug print]]
