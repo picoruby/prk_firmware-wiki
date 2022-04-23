@@ -1,5 +1,3 @@
-(This page is still a draft)
-
 ## Valid version
 
 0.9.14+
@@ -23,9 +21,10 @@ kbd.init_pins(
 )
 
 via = VIA.new
-via.layer_count = 1
 via.rows_size = 2
 via.cols_size = 2
+via.layer_count = 1
+
 kbd.append via
 
 kbd.start!
@@ -69,11 +68,30 @@ The configure page of Remap ([https://remap-keys.app/configure](https://remap-ke
 
 ## Backup your files (optional)
 
-It is recommended to save a copy of `keymap.rb`, `via-conf.txt` and `via_map.rb` (automatically created by configuring a keymap in Remap) on your local PC because upgrading PRK Firmware is going to remove them.
+It is recommended to save a copy of `keymap.rb`, `via-conf.txt` and `via_map.rb` (automatically created by configuring a keymap in Remap then you can obtain the latest one after one more rebooting the board) on your local PC because upgrading PRK Firmware is going to remove them.
 
 If you have those three files, you no longer need even Remap the next time. Just dragging and dropping them into "PRKFirmware" drive restores your keymap.
 
-## Advanced usage
+## Layer
 
-[TBD]
+Let's say you are making three layers in your keyboard.
+You need to define *mode-keys* in `keymap.rb` in advance as the code shows.
+
+```ruby
+via.layer_count = 3
+via.define_mode_key :VIA_FUNC0, [ :KC_SPACE, :VIA_LAYER1, 200, 200 ]
+via.define_mode_key :VIA_FUNC1, [ :KC_ENTER, :VIA_LAYER2, 200, 200 ]
+```
+
+Note that it is `VIA#define_mode_key`, NOT `Keyboard#define_mode_key`, but their API design is almost the same.
+See [[Layers-and-mode-key]] for more information about mode-key.
+
+| Key | Tap to input | Hold to change layer |
+|-----|--------------|----------------------|
+|FUNC0| :KC_SPACE    | Change to LAYER1     |
+|FUNC1| :KC_ENTER    | Change to LAYER2     |
+
+In Remap, put "FUNC0" and "FUNC1" where you want.
+
+<img src="images/remap3.png" width="800" />
 
