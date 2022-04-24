@@ -2,6 +2,9 @@
 
 0.9.14+
 
+The VIA feature of PRK doesn't work with the desktop app of VIA (https://github.com/the-via/releases/releases).
+Please use Remap instead.
+
 ## Basic usage
 
 ### keymap.rb
@@ -95,3 +98,6 @@ In Remap, put "FUNC0" and "FUNC1" where you want.
 
 <img src="images/remap3.png" width="800" />
 
+## Split-type keyboard
+
+As of 0.9.14, VIA feature doesn't work on a split-type keyboard.
