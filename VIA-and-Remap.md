@@ -90,6 +90,8 @@ via.define_mode_key :VIA_FUNC1, [ :KC_ENTER, :VIA_LAYER2, 200, 200 ]
 Note that it is `VIA#define_mode_key`, NOT `Keyboard#define_mode_key`, but their API design is almost the same.
 See [[Layers-and-mode-key]] for more information about mode-key.
 
+In this example, each *mode-key* works as the table describes:
+
 | Key | Tap to input | Hold to change layer |
 |-----|--------------|----------------------|
 |FUNC0| :KC_SPACE    | Change to LAYER1     |
