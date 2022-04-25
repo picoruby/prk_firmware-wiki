@@ -38,16 +38,17 @@ It loads the VIA module that makes `VIA.new` available.
 
 ### via-conf.txt
 
-You need to prepare `via-conf.txt` so that Remap can recognize the keyboard.
+You need to prepare `via-conf.txt` so that Remap can recognize a specific keyboard.
 
-The format of the content is `[VID]:[PID]:[ProductName]`.
-You can get those values in the catalog page of Remap.
+The format of the content is `[Vendor ID]:[Product ID]:[PRODUCT]`.
 
-At first, search "meishi2" in the catalog page of Remap: ([https://remap-keys.app/catalog?keyword=meishi2](https://remap-keys.app/catalog?keyword=meishi2))
+You can get those values in the Remap's catalog page of meishi2 for example:
+
+[https://remap-keys.app/catalog/756NcK1aaYMm9CuJhcTA/firmware](https://remap-keys.app/catalog/756NcK1aaYMm9CuJhcTA/firmware)
 
 <img src="images/remap.png" width="600" />
 
-Then copy VID, PID and name of the keyboard and paste them into `via-conf.txt`.
+Copy the values of "Vendor ID", "Product ID" and "PRODUCT" and paste them into `via-conf.txt` as below:
 
 ```
 0xBC42:0x0003:meishi2
@@ -101,3 +102,12 @@ In Remap, put "FUNC0" and "FUNC1" where you want.
 ## Split-type keyboard
 
 As of 0.9.14, VIA feature doesn't work on a split-type keyboard.
+
+## Rotary encoder
+
+As of 0.9.14, rotary encoders can't be configured through Remap. Write in `keymap.rb` instead.
+
+## Media keys etc.
+
+As of 0.9.14, features that PRK doesn't support like media keys and mouse buttons wouldn't work even if they look available on Remap.
+
