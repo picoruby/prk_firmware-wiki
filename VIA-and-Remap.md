@@ -92,12 +92,12 @@ See [[Layers-and-mode-key]] for more information about mode-key.
 
 In this example, each *mode-key* works as the table describes:
 
-| Key | Tap to input | Hold to change layer |
-|-----|--------------|----------------------|
-|FUNC0| :KC_SPACE    | Change to LAYER1     |
-|FUNC1| :KC_ENTER    | Change to LAYER2     |
+| Key      | Tap to input | Hold to change layer |
+|----------|--------------|----------------------|
+|:VIA_FUNC0| :KC_SPACE    | Change to LAYER1     |
+|:VIA_FUNC1| :KC_ENTER    | Change to LAYER2     |
 
-In Remap, put "FUNC0" and "FUNC1" where you want.
+The image below shows how you can find and configure a "Func" key in Remap:
 
 <img src="images/remap3.png" width="800" />
 
