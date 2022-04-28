@@ -15,6 +15,7 @@
 * Other features
   * [[VIA and Remap]]
   * [[Rotary encoder]]
+  * [[Joystick]]
   * [[RGBLED]]
   * [[Debug print]]
   * [[BOOTSEL mode of RP2040]]
