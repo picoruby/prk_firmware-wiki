@@ -46,7 +46,7 @@ Thus, you can configure up to four axes.
 
 A four-way digital cross, so-called “D-pad”, can be configured like this:
 
-```
+```ruby
 kbd.add_layer :default, [
   :JS_HAT_LEFT, :JS_HAT_DOWN, :JS_HAT_UP, :JS_HAT_RIGHT
 ]
@@ -54,7 +54,7 @@ kbd.add_layer :default, [
 
 In addition to that, you always need to append `joystick` initialized with a hash object even if you don’t have any analog stick as the code shows:
 
-```
+```ruby
 # Caution:
 # Eliminating a parenthesis doesn’t work due to syntax rule of Ruby
 #   Joystick.new {}
