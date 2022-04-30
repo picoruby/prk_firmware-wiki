@@ -36,9 +36,9 @@ kbd.start!
 Don't forget writing `require "via"` at the top of the script.
 It loads the VIA module that makes `VIA.new` available.
 
-### via-conf.txt
+### prk-conf.txt
 
-You need to prepare `via-conf.txt` so that Remap can recognize a specific keyboard.
+You need to prepare `prk-conf.txt` so that Remap can recognize a specific keyboard.
 
 The format of the content is `[Vendor ID]:[Product ID]:[PRODUCT]`.
 
@@ -48,21 +48,21 @@ You can get those values in the Remap's catalog page of meishi2 for example:
 
 <img src="images/remap.png" width="600" />
 
-Copy the values of "Vendor ID", "Product ID" and "PRODUCT" and paste them into `via-conf.txt` as below:
+Copy the values of "Vendor ID", "Product ID" and "PRODUCT" and paste them at the very top of `prk-conf.txt` in the format below:
 
 ```
 0xBC42:0x0003:meishi2
 ```
 
-Note that the file must NOT include any other letter.
+Note that this line must NOT include any other letter except a line feed.
 
 Eventually, your "PRKFirmware" drive should look like this:
 
-<img src="images/via-conf.png" width="300" />
+<img src="images/prk-conf.png" width="300" />
 
 ### Reboot
 
-Rebooting the microcontroller applies `via-conf.txt`.
+Rebooting the microcontroller applies `prk-conf.txt`.
 
 ### Remap
 
@@ -72,9 +72,9 @@ The configure page of Remap ([https://remap-keys.app/configure](https://remap-ke
 
 ## Backup your files (optional)
 
-It is recommended to save a copy of `keymap.rb`, `via-conf.txt` and `via_map.rb` (automatically created by configuring a keymap in Remap then you can obtain the latest one after one more rebooting the board) on your local PC because upgrading PRK Firmware is going to remove them.
+It is recommended to save a copy of `keymap.rb`, `prk-conf.txt` and `via_map.txt` (automatically created by configuring a keymap in Remap then you can obtain the latest one after one more rebooting the board) on your local PC because upgrading PRK Firmware is going to remove them.
 
-If you have those three files, you no longer need even Remap the next time. Just dragging and dropping them into "PRKFirmware" drive restores your keymap.
+If you have those three files, you no longer need even Remap the next time. Just dragging and dropping them into "PRKFirmware" drive restores your keymap (unless there is any breaking change in the new PRK Firmware🤞).
 
 ## Layer
 
