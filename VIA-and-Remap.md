@@ -58,7 +58,12 @@ Note that this line must NOT include any other letter except a line feed.
 
 Eventually, your "PRKFirmware" drive should look like this:
 
-<img src="images/prk-conf.png" width="300" />
+```
+PRKFirmware
+├── keymap.rb
+├── prk-conf.txt
+└── via_map.txt
+```
 
 ### Reboot
 
