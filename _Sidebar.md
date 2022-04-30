@@ -5,9 +5,12 @@
   * [[Building a binary]]
 * Keyboard features
   * [[Keycodes]]
+    * [[Media keys]]
+    * [[Mouse keys]]
   * [[Layers and mode key]]
   * [[Debounce]]
   * [[Composite key]]
+  * [[Macro]]
   * [[Split-type keyboard]]
     * [[Right-side-flipped split]]
     * [[Mutual UART communication]]
