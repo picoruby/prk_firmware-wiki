@@ -19,3 +19,5 @@ Proc.new { kbd.macro("Hello", []) }
 
 The second argument accepts an array of the following symbols: `:ENTER` `:ESCAPE` `:BSPACE` `:TAB` `:PGUP` `:DELETE` `:END` `:PGDOWN` `:RIGHT` `:LEFT` `:DOWN` and `:UP`.
 
+The default value of the second argument is `[:ENTER]`.
+This is the reason that a line feed is added when you don't pass any second argument.
