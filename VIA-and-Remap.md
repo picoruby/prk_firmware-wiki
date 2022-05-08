@@ -83,6 +83,8 @@ If you have those three files, you no longer need even Remap the next time. Just
 
 ## Layer
 
+### keymap.rb
+
 Let's say you are making three layers in your keyboard.
 You need to define *mode-keys* in `keymap.rb` **in advance of connecting to Remap** as the code shows.
 
@@ -101,6 +103,10 @@ In this example, each *mode-key* works as the table describes:
 |----------|--------------|----------------------|
 |:VIA_FUNC0| :KC_SPACE    | Change to LAYER1     |
 |:VIA_FUNC1| :KC_ENTER    | Change to LAYER2     |
+
+### Remap
+
+Unlike traditional VIA, PRK requires "Func" keys to configure layers.
 
 The image below shows how you can find and configure a "Func" key in Remap:
 
