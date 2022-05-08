@@ -62,7 +62,7 @@ Eventually, your "PRKFirmware" drive should look like this:
 PRKFirmware
 ├── keymap.rb
 ├── prk-conf.txt
-└── via_map.txt
+└── via_map.txt  # This is going to show after configuring on Remap
 ```
 
 ### Reboot
@@ -84,7 +84,7 @@ If you have those three files, you no longer need even Remap the next time. Just
 ## Layer
 
 Let's say you are making three layers in your keyboard.
-You need to define *mode-keys* in `keymap.rb` in advance as the code shows.
+You need to define *mode-keys* in `keymap.rb` **in advance of connecting to Remap** as the code shows.
 
 ```ruby
 via.layer_count = 3
@@ -113,6 +113,7 @@ As of 0.9.14, VIA feature doesn't work on a split-type keyboard.
 ## Rotary encoder
 
 As of 0.9.14, rotary encoders can't be configured through Remap. Write in `keymap.rb` instead.
+See [[Rotary encoder]]
 
 ## Media keys etc.
 
