@@ -33,11 +33,11 @@ kbd.define_mode_key :CTR_ENT_LAYER2,[ %i(KC_RCTL KC_ENTER), :layer2, 300, 150 ]
 # (1): Symbol of a keycode, Array of multiple keycodes, or Proc which is going
 #      to be called when you tap.
 # (2): Symbol of a keycode (only a modifier), Symbol of a layer to be held, or
-       Proc.
+#      Proc.
 # (3): Release-time threshold(ms). If you release the key within the time,
-       (1) key is going to be invoked once.
+#      (1) key is going to be invoked once.
 # (4): Re-push time threshold(ms). Under the state of (3), if you re-push the
-       key within the time, (1) key is going to be kept pressed
+#      key within the time, (1) key is going to be kept pressed
 
 kbd.start!
 ```
