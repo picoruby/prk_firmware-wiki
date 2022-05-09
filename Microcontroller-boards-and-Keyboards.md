@@ -9,7 +9,7 @@
 - [cool836pico](https://github.com/telzo2000/cool836pico) - 30% alice layout keyboard
 - [cool640](https://github.com/telzo2000/cool640) - 40% ortho splite keyboard
 
-## Sparkfun Pro Micro RP2040 (DEV-18288)
+## SparkFun Pro Micro RP2040 (DEV-18288)
 
 <https://www.sparkfun.com/products/18288>
 
@@ -19,23 +19,50 @@
 - [Helix rev3](https://github.com/picoruby/prk_helix_rev3) - Split-type with rotary encoders and LED
 - [Amatelus73](https://gist.github.com/hasumikin/b693dcf56dcf1fffa46ec21d1129f7a0) - Duplex matrix with LED
 
-## PICO Micro
+## PICO Micro (rarely available)
 
 <https://booth.pm/en/items/3214808>
 
 - [Runner3680 5x7 version](https://gist.github.com/shugo/5f66fc93c01336e5d934b2bd10fc0d47) <sup>[1](#1)</sup> - Split-type
-
-## XIAO RP2040
-
-<https://wiki.seeedstudio.com/XIAO-RP2040>
-
-- Tested with SU120 <sup>[2](#2)</sup>
 
 ## Adafruit KB2040
 
 <https://learn.adafruit.com/adafruit-kb2040>
 
 - Tested with SU120
+
+## SparkFun vs PICO Micro vs Adafruit
+
+They are basically compatible regarding footprint but accessible GPIO numbers on the board are NOT the same.
+
+Due to the difference, you may have to fix `keymap.rb` according to the microcontroller you choose.
+
+```
+         USB-C                      USB-C
+        ┌──────┐               ____┌──────┐____
+    ┌───│      │───┐        D+ ╂   │      │   ╂ D-
+  0 ╂   │      │   ╂RAW      0 ╂   │      │   ╂RAW
+  1 ╂   └──────┘   ╂GND      1 ╂   └──────┘   ╂GND
+ GND╂              ╂RST     GND╂              ╂RST
+ GND╂              ╂VCC     GND╂              ╂VCC
+  2 ╂              ╂ 29      2 ╂              ╂ 29
+  3 ╂              ╂ 28      3 ╂              ╂ 28
+  4 ╂              ╂ 27      4 ╂              ╂ 27
+  5 ╂              ╂ 26      5 ╂              ╂ 26
+  6 ╂              ╂ 22      6 ╂              ╂ 18 👀
+  7 ╂              ╂ 20      7 ╂              ╂ 20
+  8 ╂              ╂ 23      8 ╂              ╂ 19 👀
+  9 ╂              ╂ 21      9 ╂              ╂ 10 👀
+    └──────────────┘           └──────────────┘
+    SparkFun RP2040            Adafruit KB2040
+       PICO Micro
+```
+
+## XIAO RP2040
+
+<https://wiki.seeedstudio.com/XIAO-RP2040>
+
+- Tested with SU120 <sup>[2](#2)</sup>
 
 ## Waveshare RP2040-Zero 
 
@@ -51,4 +78,3 @@
 <img src="images/RP2040_boards.jpg" width="400" />
 
 _(left: Raspberry Pi Pico / right: Sparkfun Pro Micro RP2040)_
-
