@@ -35,7 +35,7 @@
 
 They are basically compatible regarding footprint but accessible GPIO numbers on the board are NOT the same.
 
-Due to the difference, you may have to fix `keymap.rb` according to the microcontroller you choose.
+Due to the difference, you may have to fix `keymap.rb` according to the microcontroller board you choose.
 
 ```
          USB-C                      USB-C

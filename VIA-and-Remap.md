@@ -2,8 +2,17 @@
 
 0.9.14+
 
-The VIA feature of PRK doesn't work with the desktop app of VIA (https://github.com/the-via/releases/releases).
-Please use Remap instead.
+## Notice
+
+- The desktop app of VIA (https://github.com/the-via/releases/releases) doesn't recognize an individual keyboard which runs on PRK Firmware. Please use Remap (https://remap-keys.app/) instead
+- Also, not all the features which Remap supports work on PRK-VIA
+- For some reason, updating `keymap.rb` sometimes removes `via_map.txt`. In order not to be frustrated,
+  - Read this page carefully
+  - Don't try to finish all the settings at once, backup `via_map.txt` often
+
+It'd be great if we can find a good way to share `keymap.rb` and `prk-conf.txt` because VIA is likely used by people who are not knowledgeable about programming than people who prefer writing their keymap with a text editor.
+
+Let us hear your opinion to make a better ecosystem.
 
 ## Basic usage
 
@@ -75,7 +84,7 @@ The configure page of Remap ([https://remap-keys.app/configure](https://remap-ke
 
 <img src="images/remap2.png" width="300" />
 
-## Backup your files (optional)
+## Backup your files (optional but strongly recommended)
 
 It is recommended to save a copy of `keymap.rb`, `prk-conf.txt` and `via_map.txt` (automatically created by configuring a keymap in Remap then you can obtain the latest one after one more rebooting the board) on your local PC because upgrading PRK Firmware is going to remove them.
 
