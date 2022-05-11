@@ -2,7 +2,6 @@
   * [[Tutorial]]
   * [[Basics of keymap.rb]]
   * [[Syntax checking of keymap.rb]]
-  * [[Building a binary]]
 * Keyboard features
   * [[Keycodes]]
     * [[Media keys]]
@@ -20,10 +19,13 @@
   * [[Rotary encoder]]
   * [[Joystick]]
   * [[RGBLED]]
-  * [[Debug print]]
   * [[BOOTSEL mode of RP2040]]
 * Examples
   * [[Microcontroller boards and Keyboards]]
+* Development
+  * [[Building a binary]]
+  * [[Debug print]]
+  * [[Debug with JTAG]]
 * Contribute to the Wiki
   * [[README]]
 * [[FAQ]]
