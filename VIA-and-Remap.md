@@ -27,23 +27,21 @@ require "via"
 
 kbd = Keyboard.new
 
+# This should happen before `kbd.init_pins`
+kbd.via = true
+
+kbd.via_layer_count = 1
+
 kbd.init_pins(
   [ 6, 7 ],   # row0, row1
   [ 28, 27 ]  # col0, col1
 )
 
-via = VIA.new
-via.rows_size = 2
-via.cols_size = 2
-via.layer_count = 1
-
-kbd.append via
-
 kbd.start!
 ```
 
 Don't forget writing `require "via"` at the top of the script.
-It loads the VIA module that makes `VIA.new` available.
+It loads the VIA module that makes `Keyboard#via=` available.
 
 ### prk-conf.txt
 
@@ -98,9 +96,9 @@ Let's say you are making three layers in your keyboard.
 You need to define *mode-keys* in `keymap.rb` **in advance of connecting to Remap** as the code shows.
 
 ```ruby
-via.layer_count = 3
-via.define_mode_key :VIA_FUNC0, [ :KC_SPACE, :VIA_LAYER1, 200, 200 ]
-via.define_mode_key :VIA_FUNC1, [ :KC_ENTER, :VIA_LAYER2, 200, 200 ]
+kbd.via_layer_count = 3
+kbd.define_mode_key :VIA_FUNC1, [ :KC_SPACE, :VIA_LAYER1, 200, 200 ]
+kbd.define_mode_key :VIA_FUNC2, [ :KC_ENTER, :VIA_LAYER2, 200, 200 ]
 ```
 
 Note that it is `VIA#define_mode_key`, NOT `Keyboard#define_mode_key`, but their API design is almost the same.
@@ -110,8 +108,8 @@ In this example, each *mode-key* works as the table describes:
 
 | Key      | Tap to input | Hold to change layer |
 |----------|--------------|----------------------|
-|:VIA_FUNC0| :KC_SPACE    | Change to LAYER1     |
-|:VIA_FUNC1| :KC_ENTER    | Change to LAYER2     |
+|:VIA_FUNC1| :KC_SPACE    | Change to LAYER1     |
+|:VIA_FUNC2| :KC_ENTER    | Change to LAYER2     |
 
 ### Remap
 
