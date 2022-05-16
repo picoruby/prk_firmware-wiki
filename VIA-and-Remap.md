@@ -1,4 +1,4 @@
-## Valid version
+j# Valid version
 
 0.9.14+
 
@@ -118,6 +118,24 @@ Unlike traditional VIA, PRK requires "Func" keys to configure layers.
 The image below shows how you can find and configure a "Func" key in Remap:
 
 <img src="images/remap3.png" width="800" />
+
+## RGB keys
+
+These keys can be configured through Remap (DEVICE > UNDERGLOW section):
+
+|Keyname in Remap|Keycode in PRK|
+|:--------------:|:------------:|
+|RGB Toggle      |:RGB_TOG      |
+|RGB Mode+       |:RGB_MOD      |
+|RGB Mode-       |:RGB_RMO      |
+|Hue+            |:RGB_HUI      |
+|Hue-            |:RGB_HUD      |
+|Sat+            |:RGB_SAI      |
+|Sat-            |:RGB_SAD      |
+|Bright+         |:RGB_VAI      |
+|Bright-         |:RGB_VAD      |
+|Effect Speed+   |:RGB_SPI      |
+|Effect Speed+   |:RGB_SPD      |
 
 ## Split-type keyboard
 
