@@ -14,6 +14,7 @@
     * [[Right-side-flipped split]]
     * [[Mutual UART communication]]
   * [[Keyscan matrix]]
+  * [[Num Lock, Caps Lock and Scroll Lock]]
 * Other features
   * [[VIA and Remap]]
   * [[Rotary encoder]]
