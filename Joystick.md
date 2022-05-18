@@ -7,7 +7,7 @@
 This example is going to configure a gamepad that has a 2D analog stick and four buttons:
 
 ```ruby
-require “joystick”
+require "joystick"
 
 kbd = Keyboard.new
 
