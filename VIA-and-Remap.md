@@ -137,10 +137,6 @@ These keys can be configured through Remap (DEVICE > UNDERGLOW section):
 |Effect Speed+   |:RGB_SPI      |
 |Effect Speed+   |:RGB_SPD      |
 
-## Split-type keyboard
-
-As of 0.9.14, VIA feature doesn't work on a split-type keyboard.
-
 ## Rotary encoder
 
 As of 0.9.14, rotary encoders can't be configured through Remap. Write in `keymap.rb` instead.
