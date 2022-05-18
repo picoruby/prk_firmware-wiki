@@ -8,6 +8,7 @@
 - [Picobd](https://github.com/MachiaWorks/picobd) - 30% (close to 40%) small keyboard
 - [cool836pico](https://github.com/telzo2000/cool836pico) - 30% alice layout keyboard
 - [cool640](https://github.com/telzo2000/cool640) - 40% ortho splite keyboard
+- [SQU4REkb-6](https://github.com/alg0002/PRK_Firmware_keymap_rb/tree/main/SQU4REkb-6) - Ortho macro pad / 60% split keyboard
 
 ## SparkFun Pro Micro RP2040 (DEV-18288)
 
