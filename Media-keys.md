@@ -6,7 +6,7 @@
 
 At the top of `keymap.rb`,
 
-```
+```ruby
 require "kc_media"
 ```
 
