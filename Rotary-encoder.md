@@ -9,7 +9,7 @@ For example, following keymap.rb will configure 2 rotary encoders.
 `encoder_1` moves the cursor vertically.
 `encoder_2` adjusts the glittering speed of LED.
 
-```
+```ruby
 kbd = Keyboard.new
 
 encoder_1 = RotaryEncoder.new(28, 27)

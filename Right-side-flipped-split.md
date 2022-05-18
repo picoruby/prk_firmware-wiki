@@ -13,7 +13,7 @@ eg:
 
 PRK Firmware supports those keyboards by `:right_side_flipped_split` attribute.
 
-```
+```ruby
 # Example keymap for Zink
 kbd = Keyboard.new
 kbd.split = true

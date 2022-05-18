@@ -13,7 +13,7 @@ kbd.define_mode_key :MACRO_2, [ Proc.new { kbd.macro("World!") }, nil, 200, nil]
 These macros add a line feed.
 If you want it not to add a line feed, add an empty array `[]` at the second argument:
 
-```
+```ruby
 Proc.new { kbd.macro("Hello", []) }
 ```
 

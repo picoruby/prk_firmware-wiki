@@ -8,7 +8,7 @@
 
 ## In your `keymap.rb`
 
-```
+```ruby
 kbd = Keyboard.new
 kbd.split = true
 kbd.mutual_uart_at_my_own_risk = true
