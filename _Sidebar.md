@@ -25,6 +25,7 @@
   * [[Microcontroller boards and Keyboards]]
 * Development
   * [[Building a binary]]
+  * [[Docker]]
   * [[Debug print]]
   * [[Debug with JTAG]]
 * Contribute to the Wiki

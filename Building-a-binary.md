@@ -2,9 +2,7 @@
 
 As far as the author knows, building a PRK binary, or to be exact, preparing a build environment can be done in only Linux. WSL2 should work, too.
 
-If you are a macOS user, try docker instead, although M1 Mac possibly doesn't work (tell us if it does).
-
-See `prk_firmware/Dockerfile`. It includes a guidance.
+If you are a macOS user, try docker instead. (See [[Docker]])
 
 ## Binary without keymap
 
@@ -61,3 +59,25 @@ If so, you can build a binary including your keymap.rb in this way:
     ```
 
     Now you should have `prk_firmware-[version]-[date]-no_msc.uf2` file in `prk_firmware/keyboards/prk_meishi2/build/` directory which includes your keymap in code.
+
+## Files you should learn
+
+You are likely having problems while developing PRK.
+
+These files may give you a clue regarding PRK build system:
+
+```
+prk_firmware
+ ├── CMakeLists.txt
+ ├── Rakefile
+ ├── lib
+ │    └── CMakeLists.txt
+ └── src
+      └── ruby
+           └── Rakefile
+```
+
+### Resources
+
+- CMake: https://cmake.org/documentation/
+- Rake: https://ruby.github.io/rake/
