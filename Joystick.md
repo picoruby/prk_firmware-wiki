@@ -100,6 +100,6 @@ See [[Debounce]] for details.
 
 ## Split-type
 
-If your keyboard is a split-type along with a joystick (are you sure?!), the joystick won't work in case that the stick is on the partner half.
+If your keyboard is a split-type along with a joystick (are you sure?!), an analog stick won't work in case it's on the partner half.
 
 See also [[Split-type-keyboard]].
