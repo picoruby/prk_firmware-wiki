@@ -97,3 +97,9 @@ Depending on the game you play, you may want the debounce algorithm not to work.
 Above code turns off the debouncer.
 
 See [[Debounce]] for details.
+
+## Split-type
+
+If your keyboard is a split-type along with a joystick (are you sure?!), the joystick won't work in case that the stick is on the partner half.
+
+See also [[Split-type-keyboard]].
