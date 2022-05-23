@@ -11,12 +11,10 @@ require "joystick"
 
 kbd = Keyboard.new
 
-joystick = Joystick.new(
-  {
-    :x => 26,
-    :y => 27
-  }
-)
+joystick = Joystick.new({
+  :x => 26,
+  :y => 27
+})
 kbd.append joystick
 
 kbd.init_pins(
@@ -51,23 +49,19 @@ Analog sticks often have a drift that causes unwanted movement even when you are
 
 PRK ignores a stick value that is less than a threshold named `drift_suppression`.
 
-|Default|Minimum|Maximum|
-|-------|-------|-------|
-|5      |0      |100    |
-
 You can vary the value as follows:
 
 ```ruby
-joystick.drift_suppression = 18
+joystick.drift_suppression = 18  # Default: 5. Valid value: 0..100
 ```
 
 In this case, an analog stick value within `-18..18` is going to be ignored.
 
 #### A side effect of configuring `drift_suppression = 0`
 
-If your gamepad also has a keyboard function in addition to a joystick and you've configured `joystick.drift_suppression = 0`, you will probably have trouble with it.
+If your game controller also has a keyboard function in addition to a joystick and you've configured `joystick.drift_suppression = 0` (or such a small value), you will probably have trouble with it.
 
-Because an HID Gamepad status will be incessantly reported to the host PC due to drifting, reporting an HID Keyboard status is going to be considerably interrupted.
+Because an HID Game Controller status will be incessantly reported to the host PC due to drifting, reporting an HID Keyboard status is going to be considerably interrupted.
 
 ## D-pad
 
