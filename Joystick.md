@@ -12,8 +12,14 @@ require "joystick"
 kbd = Keyboard.new
 
 joystick = Joystick.new({
-  :x => 26,
-  :y => 27
+  :x => {
+    pin: 26,       # Required: Pin number
+    invert: false, # Optional: Inverts direction if true. Default: false
+    magnify: 1.3   # Optional: Magnifies sensitivity. Default: 1.0
+  }
+  :y => {
+    pin: 27
+  }
 })
 kbd.append joystick
 
