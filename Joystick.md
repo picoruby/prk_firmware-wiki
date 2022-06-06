@@ -46,9 +46,6 @@ As the example shows, `Keyboard.new` accepts any pairs of axis symbol and GPIO p
 
 Thus, you can configure up to four axes.
 
-The range of an analog stick value is from `-128` to `127`.
-`0` is the center, accordingly.
-
 ### Suppressing drift from the center
 
 Analog sticks often have a drift that causes unwanted movement even when you aren't touching a stick.
@@ -62,6 +59,9 @@ joystick.drift_suppression = 18  # Default: 5. Valid value: 0..100
 ```
 
 In this case, an analog stick value within `-18..18` is going to be ignored.
+
+The range of an analog stick value is from `-128` to `127`.
+`0` is the center, accordingly.
 
 #### A side effect of configuring `drift_suppression = 0`
 
@@ -79,14 +79,10 @@ kbd.add_layer :default, [
 ]
 ```
 
-In addition to that, you always need to append `joystick` initialized with an empty hash object even if you don’t have any analog stick as the code shows:
+In addition to that, you always need to append `joystick` initialized without argument even if you don’t have an ANALOG stick:
 
 ```ruby
-# Caution:
-# Eliminating a parenthesis doesn’t work due to syntax rule of Ruby
-#   Joystick.new {}
-#   => Error
-joystick = Joystick.new({})
+joystick = Joystick.new
 kbd.append joystick
 ```
 
@@ -108,4 +104,4 @@ See [[Debounce]] for details.
 
 If your keyboard is a split-type along with a joystick (are you sure?!), an analog stick won't work in case it's on the partner half.
 
-See also [[Split-type-keyboard]].
+See also [[Split-type keyboard]].
