@@ -1,6 +1,9 @@
 ## Valid version
 
-0.9.0+
+|Feature|Version|
+|----|----|
+|Layer feature|0.9.0+|
+|[Changing default layer](#changing-default-layer)|0.9.15+|
 
 ## Description
 
@@ -46,6 +49,24 @@ kbd.start!
 - If you tap "key2" while holding key1, "1" is going to be sent
 - If you tap "key3" while holding key4, "F2" is going to be sent
 - If you tap "key4" then release it within 300ms then re-push it within 150ms and hold it, "CTRL+ENTER" is going to be sent continuously
+
+## Changing default layer
+
+Let's say you are using both a Windows and a macOS with a KVM switch, you may want a key to alternate between GUI and CTRL according to the OS.
+You can switch the default layer by taking advantage of `Keyboard#define_mode_key`.
+
+```
+kbd = Keyboard.new
+
+kbd.add_layer :default_mac, %i[ :TO_WIN :RAISE :KC_LGUI :KC_X :KC_C :KC_V ]
+kbd.add_layer :default_win, %i[ :TO_MAC :RAISE :KC_LCTL :KC_X :KC_C :KC_V ]
+kbd.add_layer :raise,       %i[ :KC_NO  :RAISE :KC_1    :KC_2 :KC_3 :KC_4 ]
+
+kbd.define_mode_key :RAISE, [ :KC_SPACE, :raise, 200, 200 ]
+
+kbd.define_mode_key :TO_WIN, [ Proc.new { kbd.default_layer = :default_win }, :KC_NO, 200, nil]
+kbd.define_mode_key :TO_MAC, [ Proc.new { kbd.default_layer = :default_mac }, :KC_NO, 200, nil]
+```
 
 ## Proc in `Keyboard#define_mode_key`
 
