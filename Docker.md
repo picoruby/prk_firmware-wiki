@@ -1,10 +1,8 @@
 ## Quick usage
 
 Note:
-- If you are still not ready for "Compose V2", try `docker-compose` instead of `docker compose` while we recommend upgrading Docker CLI  
+- If you are still not ready for "Compose V2", try `docker-compose` instead of `docker compose` while we recommend upgrading Docker CLI
   See https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command
-- As of May 2022, docker on M1 Mac doesn't work. Try building on the host instead  
-  See [[Building a binary]]
 
 ### Setup
 
@@ -35,6 +33,16 @@ docker compose run --rm prk rake build_with_keymap[prk_meishi2]
 
 ```sh
 docker compose run --rm prk rake clean_with_keymap[prk_meishi2]
+```
+
+## docker on M1 Mac
+
+- To build on M1 Mac, follow the steps below, skipping the `rake mrubyc_test` step to make it buildable.
+
+```sh
+docker compose build
+docker compose run --rm prk rake setup
+docker compose run --rm prk rake make_without_test
 ```
 
 ## Haste makes waste
