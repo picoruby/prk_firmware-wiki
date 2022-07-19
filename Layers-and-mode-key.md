@@ -55,7 +55,7 @@ kbd.start!
 Let's say you are using both a Windows and a macOS with a KVM switch, you may want a key to alternate between GUI and CTRL according to the OS.
 You can switch the default layer by taking advantage of `Keyboard#define_mode_key`.
 
-```
+```ruby
 kbd = Keyboard.new
 
 kbd.init_pins([6, 7, 8], [28, 27]) # Depending on PCB
