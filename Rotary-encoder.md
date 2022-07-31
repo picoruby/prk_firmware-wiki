@@ -30,8 +30,34 @@ encoder_2.counterclockwise do
 end
 kbd.append encoder_2
 
-rgb = RGB.new(0, 24, 0, false)
-kbd.append rgb
+# The usage of Keyboard#send_key in encoder_3
+# and encoder_4 is valid on 0.9.17+
+
+# Composite key
+encoder_3 = RotaryEncoder.new(21, 20)
+encoder_3.clockwise do
+  kbd.send_key :KC_LALT, :KC_TAB
+  #            ^^^^^^^^^^^^^^^^^
+  #            Accepts multiple symbols
+end
+encoder_3.counterclockwise do
+  kbd.send_key %i(KC_LALT KC_LSFT KC_TAB)
+  #            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  #            An array of symbols also works
+end
+kbd.append encoder_3
+
+# Consumer (media) key
+encoder_4 = RotaryEncoder.new(19, 18)
+encoder_4.clockwise do
+  kbd.send_key :KC_VOLU
+end
+encoder_4.counterclockwise do
+  kbd.send_key :KC_VOLD
+end
+kbd.append encoder_4
 
 kbd.start!
 ```
+
+See also [[Consumer key]]

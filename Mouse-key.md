@@ -7,7 +7,7 @@
 At the top of `keymap.rb`,
 
 ```ruby
-require "kc_mouse"
+require "mouse_key"
 ```
 
 Then, these attributes are added to Keyboard class:

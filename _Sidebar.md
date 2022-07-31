@@ -4,8 +4,8 @@
   * [[Syntax checking of keymap.rb]]
 * Keyboard features
   * [[Keycodes]]
-    * [[Media keys]]
-    * [[Mouse keys]]
+    * [[Consumer key]]
+    * [[Mouse key]]
   * [[Layers and mode key]]
   * [[Debounce]]
   * [[Composite key]]
