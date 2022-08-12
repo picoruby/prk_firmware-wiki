@@ -4,7 +4,7 @@
 
 ## Usage
 
-`Keyboard#inject_switch` will inject a switch position in the keymap as if it was tapped:
+`Keyboard#inject_switch` will inject a switch position of the matrix as if it was tapped:
 
 ```ruby
 kbd.inject_switch(0, 1)
@@ -38,7 +38,7 @@ It works. But you can also use `inject_switch` with "vacant" matrix:
 ```diff
  kbd.init_pins(
 -  [1],
-+  [1, 2], # (*)
++  [1, 2], # (*) See the footnote
    [10, 11, 12, 13]
  )
  kbd.add_layer :default, %i[
@@ -63,5 +63,5 @@ See also [[Rotary encoder]] and [[VIA and Remap]].
 
 ----
 
-Note: (*) Generally, GPIO 2 should be just floated from the circuit because it is internally pulled up.
+(*) Generally, GPIO 2 should be just floated from the circuit because it is internally pulled up.
 
