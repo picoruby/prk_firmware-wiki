@@ -63,5 +63,5 @@ See also [[Rotary encoder]] and [[VIA and Remap]].
 
 ----
 
-Note: (*) GPIO 2 ideally should be connected to GND via a resistor though, it generally can be just floated.
+Note: (*) Generally, GPIO 2 should be just floated from the circuit because it is internally pulled up.
 
