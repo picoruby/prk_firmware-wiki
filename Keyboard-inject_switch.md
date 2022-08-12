@@ -33,7 +33,7 @@ end
 kbd.append encoder
 ```
 
-It works. But you also can write with `inject_switch` and "vacant" matrix:
+It works. But you can also use `inject_switch` with "vacant" matrix:
 
 ```diff
  kbd.init_pins(
