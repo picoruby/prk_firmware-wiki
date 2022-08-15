@@ -1,16 +1,16 @@
 ## Valid version
 
-0.9.17+
+0.9.18+
 
 ## Usage
 
 `Keyboard#inject_switch` will inject a switch position of the matrix as if it was tapped:
 
 ```ruby
-kbd.inject_switch(0, 1)
-#                 ^  ^col position
+kbd.inject_switch(1, 0)
+#                 ^  ^row position
 #                 |
-#                 row position
+#                 col position
 ```
 
 Let's say you have a 1x4 matrix macro pad that has a rotary encoder:
@@ -48,7 +48,7 @@ It works. But you can also use `inject_switch` with "vacant" matrix:
  encoder = RotaryEncoder.new(15, 16)
  encoder.clockwise do
 -  kbd.send_key :KC_VOLU
-+  kbd.inject_switch(1, 0)
++  kbd.inject_switch(0, 1)
  end
  encoder.counterclockwise do
 -  kbd.send_key :KC_VOLD
