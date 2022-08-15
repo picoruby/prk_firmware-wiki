@@ -23,6 +23,7 @@
   * [[Rotary encoder]]
   * [[Joystick]]
   * [[RGBLED]]
+  * [[RGB Matrix]]
   * [[BOOTSEL mode of RP2040]]
 * Examples
   * [[Microcontroller boards and Keyboards]]
