@@ -1,13 +1,18 @@
 ## Valid version
 
-0.9.6+
+|Feature|Version|
+|----|----|
+|RGB Lighting|0.9.6+|
 
 ## Effect modes:
+
 - `:swirl`
 - `:rainbow_mood`
 - `:breath`
 - `:nokogiri`
- 
+- `:static`
+- `:ruby`
+
 ## Keycodes:
 |keycode|alias|functionality|swirl|rainbow_mood|breath|nokogiri|
 | ---- | ---- | ---- | :--: | :--: | :--: | :--: |
@@ -40,3 +45,5 @@ rgb.value      = 10  # 1-31  / default: 13
 
 kbd.append rgb # `kbd` is an instance of Keyboard class that should be newed in advance
 ```
+
+See also [[RGB Matrix]].
