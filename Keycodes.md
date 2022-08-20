@@ -52,7 +52,7 @@
 |`:KC_EQUAL`|`:KC_EQL`|`=` and `+`||
 |`:KC_LBRACKET`|`:KC_LBRC`|`[` and `{`||
 |`:KC_RBRACKET`|`:KC_RBRC`|`]` and `}`||
-|`:KC_BSLASH`|`:KC_BSLS`|`\` and `|`||
+|`:KC_BSLASH`|`:KC_BSLS`|`\` and `\|`||
 |`:KC_NONUS_HASH`||Non-US `#` and `~`||
 |`:KC_SCOLON`||`;` and `:`||
 |`:KC_QUOTE`|`:KC_QUOT`|`'` and `"`||
