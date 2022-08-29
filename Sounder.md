@@ -8,12 +8,12 @@
 
 PRK can not only make a beep sound but also a music.
 
-As of 0.9.18, Piezoelectric sounder is supported by `Sound` class.
+As of 0.9.18, Piezoelectric sounder is supported by `Sounder` class.
 
 ## Basic usage
 
 ```ruby
-require 'sounder'
+require "sounder"
 sounder = Sounder.new(2) # A pin number that connecs to the sounder
 sounder.play "c d e f g a b < c"
 ```
@@ -25,7 +25,12 @@ This plays "Do Re Mi Fa So La Ti Do"
 ### Sounder#create_song
 
 It creates a new song but doesn't play it.
-This method accepts variable-length arguments of String.
+
+```ruby
+sounder.create_song "c e g f e f d c"
+```
+
+You can also pass variable-length arguments like this:
 
 ```ruby
 sounder.create_song "c e g f", "e f d c"
@@ -65,7 +70,7 @@ sounder.play Sounder::SONGS[:beepo]
 
 ## Examples
 
-### Plays the intro of Super Mario at keyboard's start up
+### Plays the intro of Super Mario Bros. when the keyboard starts up
 
 ```ruby
 sounder = Sounder.new(2)
