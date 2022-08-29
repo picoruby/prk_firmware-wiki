@@ -82,6 +82,6 @@ kbd.before_report do
 end
 ```
 
-## How to write the song?
+## How to write a song?
 
 See [[Music Macro Language]].
