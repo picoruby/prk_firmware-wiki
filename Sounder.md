@@ -6,7 +6,7 @@
 
 ## Description
 
-PRK can not only make a beep sound but also a music.
+PRK can not only make a beep sound but also play music.
 
 As of 0.9.18, Piezoelectric sounder is supported by `Sounder` class.
 
@@ -77,6 +77,14 @@ sounder = Sounder.new(2)
 sounder.play "T200 L8 O5 e16. r32 e r e r c e r g r4. > g"
 ```
 
+You can add your song to the list:
+
+```ruby
+sounder = Sounder.new(2)
+Sounder::SONGS[:mario] = "T200 L8 O5 e16. r32 e r e r c e r g r4. > g"
+sounder.play Sounder::SONGS[:mario]
+```
+
 ### Beeps every time you hit a key
 
 ```ruby
@@ -91,6 +99,22 @@ kbd.before_report do
 end
 ```
 
-## How to write a song?
+Alternatively, the code below is more effective regarding CPU performance:
+
+```ruby
+sounder = Sounder.new(2)
+
+sounder.create_song Sounder::SONGS[:beepo]
+
+kbd.before_report do
+  if kbd.key_reporting?
+    sounder.replay
+  else
+    sounder.playing = false
+  end
+end
+```
+
+## BTW, how to write a song?
 
 See [[Music Macro Language]].
