@@ -22,13 +22,13 @@ This plays "Do Re Mi Fa So La Ti Do"
 
 ## API
 
-### Sounder#set_song
+### Sounder#create_song
 
 It creates a new song but doesn't play it.
 This method accepts variable-length arguments of String.
 
 ```ruby
-souder.play "c e g f", "e f d c"
+sounder.create_song "c e g f", "e f d c"
 ```
 
 ### Sounder#replay
@@ -36,13 +36,17 @@ souder.play "c e g f", "e f d c"
 It plays the last created song.
 
 ```ruby
-souder.replay
+sounder.replay
 ```
 
 ### Sounder#play
 
 A wrapper method for `Sounder#create_song` and `Sounder#replay`.
 As in, it accepts variable-length arguments of String.
+
+```ruby
+sounder.play "c e g f", "e f d c"
+```
 
 ## Preset songs
 
