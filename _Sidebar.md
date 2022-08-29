@@ -24,6 +24,8 @@
   * [[Joystick]]
   * [[RGBLED]]
   * [[RGB Matrix]]
+  * [[Sounder]]
+    * [[Music Macro language]]
   * [[BOOTSEL mode of RP2040]]
 * Examples
   * [[Microcontroller boards and Keyboards]]
