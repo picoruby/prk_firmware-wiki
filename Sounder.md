@@ -22,23 +22,23 @@ This plays "Do Re Mi Fa So La Ti Do"
 
 ## API
 
-### Sounder#create_song
+### Sounder#compile
 
 It creates a new song but doesn't play it.
 
 ```ruby
-sounder.create_song "c e g f e f d c"
+sounder.compile "c e g f e f d c"
 ```
 
 You can also pass variable-length arguments like this:
 
 ```ruby
-sounder.create_song "c e g f", "e f d c"
+sounder.compile "c e g f", "e f d c"
 ```
 
 ### Sounder#replay
 
-It plays the last created song.
+It plays the last played (compiled) song.
 
 ```ruby
 sounder.replay
@@ -46,12 +46,16 @@ sounder.replay
 
 ### Sounder#play
 
-A wrapper method for `Sounder#create_song` and `Sounder#replay`.
+A wrapper method for `Sounder#compile` and `Sounder#replay`.
 As in, it accepts variable-length arguments of String.
 
 ```ruby
 sounder.play "c e g f", "e f d c"
 ```
+
+### Sounder#add_song
+
+See [Examles](#examples).
 
 ## Preset songs
 
@@ -65,7 +69,7 @@ The list of preset songs:
 |oneup|
 
 ```ruby
-sounder.play Sounder::SONGS[:beepo]
+sounder.play :beepo
 ```
 
 ## Examples
@@ -81,8 +85,8 @@ You can add your song to the list:
 
 ```ruby
 sounder = Sounder.new(2)
-Sounder::SONGS[:mario] = "T200 L8 O5 e16. r32 e r e r c e r g r4. > g"
-sounder.play Sounder::SONGS[:mario]
+sounder.add_songs :mario, "T200 L8 O5 e16. r32 e r e r c e r g r4. > g"
+sounder.play :mario
 ```
 
 ### Beeps every time you hit a key
@@ -92,7 +96,7 @@ sounder = Sounder.new(2)
 
 kbd.before_report do
   if kbd.key_reporting?
-    sounder.play Sounder::SONGS[:beepo]
+    sounder.play :beepo
   else
     sounder.playing = false
   end
@@ -104,7 +108,7 @@ Alternatively, the code below is more effective regarding CPU performance:
 ```ruby
 sounder = Sounder.new(2)
 
-sounder.create_song Sounder::SONGS[:beepo]
+sounder.compile :beepo
 
 kbd.before_report do
   if kbd.key_reporting?
