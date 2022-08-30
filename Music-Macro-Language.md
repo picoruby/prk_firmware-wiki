@@ -13,15 +13,21 @@ PRK supports an [MSX](https://en.wikipedia.org/wiki/MSX)-like MML.
 
 All instructions are case insensitive.
 
-|Instruction|Effect|Values|Default|Example|
+|Instruction|Effect|Values|Example|
 |----|----|----|----|----|
-|T&lt;tempo&gt;|Specifies tempo of the song after this instruction|any|`120`|`T200`, `T60`|
-|O&lt;octave&gt;|Specifies octave of the notes after this instruction. Each octave starts from `C` and ends at `B`|`0` to `9`|`4`|`O5`, `O8`|
-|L&lt;fraction&gt;[&lt;period&gt;]|Specifies the length of the notes after this instruction|`1` to any|`4`|`L2.`, `L16`|
-|A to G[&lt;semitone&gt;][&lt;fraction&gt;][&lt;period&gt;]|Specifies a note from the scale, optionally with a semitone and/or fraction and/or period(s)|`C` `D` `E` `F` `G` `A` `B`||`C+8..`|
-|R[&lt;fraction&gt;][&lt;period&gt;]|Specifies a rest|||`R`, `R1.`
-|&lt;fraction&gt;|Optionally represents a fraction of a whole note to specify the length of a note or a rest. For example, `4` is a quarter note|||`L8`, `C1`, `R3`|
-|&lt;semitone&gt;|Optionally raises or lowers by a semitone the note just before it|`+` or `-`||`C-`, `A+`|
-|&lt;period&gt;|Optionally adds a half of the length to the note or rest just before it. Multiple periods are also valid|||`L2.`, `C4..`, `R8.`|
-|&lt;|Increases one octave after this instruction|||`O4 A < A` (440 Hz and 880 Hz)|
-|&gt;|Decreases one octave after this instruction|||`O4 A > A` (440 Hz and 220 Hz)|
+|T&lt;tempo&gt;|Specifies tempo of the song after this instruction|tempo: `1` to any<br>(default: `120`)|`T200`, `T60`|
+|O&lt;octave&gt;|Specifies octave of the notes after this instruction. Each octave starts from `C` and ends at `B`|octave: `0` to `9`<br>(default: `4`)|`O5`, `O8`|
+|L&lt;fraction&gt;[&lt;dot&gt;]|Specifies the length of the notes after this instruction|fraction: `1` to any<br><nobr>dot: `.` (multiple dots allowed)</nobr>|`L2.`, `L16`|
+|A to G[&lt;semitone&gt;][&lt;fraction&gt;][&lt;dot&gt;]|Specifies a note from the scale, optionally with a semitone and/or fraction and/or dot(s)|<nobr>`C` `D` `E` `F` `G` `A` `B`</nobr><br>semitone: `+` `-`<br>fraction: `1` to any<br><nobr>dot: `.` (multiple dots allowed)</nobr>|`C+8..`|
+|R[&lt;fraction&gt;][&lt;dot&gt;]|Specifies a rest|fraction: `1` to any<br><nobr>dot: `.` (multiple dots allowed)</nobr>|`R`, `R1.`|
+|&lt;|Increases one octave after this instruction||`O4 A < A` (440 Hz and 880 Hz)|
+|&gt;|Decreases one octave after this instruction||`O4 A > A` (440 Hz and 220 Hz)|
+|Q&lt;sustain&gt;|Specifies the ratio of the actual sounding length of the note length derived from the &lt;fraction&gt; value.<br><nobr>Formula: `<sustain> / 8`</nobr>|sustain: `1` to `8`<br>(default: `7`)|<nobr>`Q4 A4 A4` is equivalent to `Q8 A8 R8 A8 A8`</nobr><br><nobr>`Q8 A4 A4` is equivalent to `Q8 A2`</nobr>|
+
+### Common operands
+
+|Operand|Effect|Default|Example|
+|----|----|----|----|
+|&lt;fraction&gt;|Represents a fraction of a whole note to specify the length of a note or a rest. For example, `4` is a quarter note|`4`|`L8`, `C1`, `R3`|
+|&lt;semitone&gt;|Optionally raises or lowers by a semitone the note just before it||`C-`, `A+`|
+|&lt;dot&gt;|Optionally adds a half of the length to the note or rest just before it. Multiple periods are also valid||`L2.`, `C..`, `R8.`|
