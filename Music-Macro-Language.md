@@ -16,7 +16,7 @@ See also [[Sounder]].
 All instructions are case insensitive.
 
 |Instruction|Effect|Values|Example|
-|----|----|----|----|----|
+|----|----|----|----|
 |T&lt;tempo&gt;|Specifies tempo of the song|tempo: `1` to any<br>(default: `120`)|`T200`, `T60`|
 |O&lt;octave&gt;|Specifies octave of the notes after this instruction. Each octave starts from `C` and ends at `B`|octave: `0` to `9`<br>(default: `4`)|`O5`, `O8`|
 |L&lt;fraction&gt;[&lt;dot&gt;]|Specifies the length of the notes after this instruction|fraction: `1` to any<br><nobr>dot: `.` (multiple dots allowed)</nobr>|`L2.`, `L16`|
