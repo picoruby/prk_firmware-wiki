@@ -95,29 +95,16 @@ sounder.play :mario
 sounder = Sounder.new(2)
 
 kbd.before_report do
-  if kbd.key_reporting?
+  if kbd.key_pressed?
     sounder.play :beepo
+    sounder.lock
   else
-    sounder.playing = false
+    sounder.unlock
   end
 end
 ```
 
-Alternatively, the code below is more effective regarding CPU performance:
-
-```ruby
-sounder = Sounder.new(2)
-
-sounder.compile :beepo
-
-kbd.before_report do
-  if kbd.key_reporting?
-    sounder.replay
-  else
-    sounder.playing = false
-  end
-end
-```
+`sounder.lock` and `sounder.unlock` are for preventing another playback while playing.
 
 ## BTW, how to write a song?
 
