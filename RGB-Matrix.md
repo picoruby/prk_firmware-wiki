@@ -17,7 +17,13 @@ To take advantage of the RGB Matrix feature, you need to configure the physical 
 The API of PRK looks like this:
 
 ```ruby
-rgb.plot_matrix( [ [188, 16], [187, 48], [149, 64], [112, 64], [37, 48], [38, 16] ] )
+rgb = RGB.new(0, 0, 6)
+
+[
+  [188, 16], [187, 48], [149, 64], [112, 64], [37, 48], [38, 16]
+].each do |p|
+  rgb.add_pixel(p[0], p[1])
+end
 ```
 
 ## Example
@@ -77,34 +83,32 @@ def y_pos(row)
   64 / (RGB_ROW_COUNT - 1) * row
 end
 
-rgb_matrix = Array.new
+rgb = RGB.new(0, 0, 74)
 
 RGB_ROW_COUNT.times do |row_index|
   RGB_COL_COUNT.times do |col|
     col_index = ROW_REVERSED[row_index] ? (RGB_COL_COUNT - col - 1) : col
     unless EXCLUDE_POS.include?([col_index, row_index])
-      rgb_matrix << [x_pos(col_index), y_pos(row_index)]
+      rgb.add_pixel(x_pos(col_index), y_pos(row_index))
     end
   end
 end
 
-rgb = RGB.new(0, 0, 74, false)
 rgb.effect = :circle
 rgb.speed = 22
-rgb.plot_matrix(rgb_matrix)
 
 kbd.append rgb
 ```
 
-Instead of a dynamic calculation above, you can also write a static value of the `rgb_matrix`.
+Instead of a dynamic calculation above, you can also write a static value of the coordinate.
 
-If you pretty-print `rgb_matrix`, it looks like this:
+The code below is equivalent:
 
 ```ruby
 #
-# Comment lines correspond to the items of EXCLUDE_POS
+# Comment lines indicate the EXCLUDE_POS
 #
-rgb_matrix = [
+[
   [210, 0], [196, 0], [182, 0], [168, 0], [154, 0], [140, 0], [126, 0], [112, 0], [ 98, 0], [ 84, 0], [ 70, 0], [ 56, 0], [ 42, 0], [ 28, 0], [ 14, 0], [  0, 0],
   [  0,16], [ 14,16], [ 28,16], [ 42,16], [ 56,16], [ 70,16], [ 84,16], [ 98,16], [112,16], [126,16], [140,16], [154,16], [168,16], [182,16], [196,16], [210,16],
   [210,32], [196,32], [182,32], [168,32], [154,32], [140,32], [126,32], [112,32], [ 98,32], [ 84,32], [ 70,32], [ 56,32], [ 42,32], [ 28,32], [ 14,32],
@@ -114,7 +118,9 @@ rgb_matrix = [
   [210,64], [196,64], [182,64],                     [140,64], [126,64], [112,64], [ 98,64], [ 84,64], [ 70,64],                               [ 14,64], [  0,64],
 #                               ^^^^^^^^  ^^^^^^^^                                                              ^^^^^^^^  ^^^^^^^^  ^^^^^^^^
 #                               [12, 4]   [11, 4]                                                                [4, 4]    [3, 4]    [2, 4]
-]
+].each do |p|
+  rgb.add_pixel(p[0], p[1])
+end
 ```
 
 It's tricky because the third row and the fifth row are *reversed* and have *excluded positions*.

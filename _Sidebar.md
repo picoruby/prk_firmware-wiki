@@ -23,7 +23,7 @@
   * [[Rotary encoder]]
   * [[Joystick]]
   * [[RGBLED]]
-  * [[RGB Matrix]]
+    * [[RGB Matrix]]
   * [[Sounder]]
     * [[Music Macro language]]
   * [[BOOTSEL mode of RP2040]]
