@@ -2,9 +2,11 @@
 
 0.9.0+
 
-## Usage
+## Description
 
 `Keyboard#send_key` will report a keycord according to the argument:
+
+## Usage
 
 ```ruby
 kbc.send_key :KC_A

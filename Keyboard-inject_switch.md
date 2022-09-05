@@ -2,9 +2,11 @@
 
 0.9.18+
 
-## Usage
+## Description
 
-`Keyboard#inject_switch` will inject a switch position of the matrix as if it was tapped:
+`Keyboard#inject_switch` will inject a switch position of the matrix as if it was tapped.
+
+## Usage
 
 ```ruby
 kbd.inject_switch(1, 0)

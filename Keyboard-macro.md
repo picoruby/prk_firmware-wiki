@@ -2,6 +2,10 @@
 
 0.9.0+
 
+## Description
+
+`Keyboard#macro` will type your keyboard on your behalf.
+
 ## Usage
 
 ```ruby
