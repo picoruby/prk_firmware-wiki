@@ -22,7 +22,7 @@ end
 
 ```ruby
 kbd.signal_partner :KEYCODE do
-  # Do something on the partner half
+  # Do something on the partner half when :KEYCODE is tapped
   # Naturally, this works only if kbd.split == true
 end
 ```
