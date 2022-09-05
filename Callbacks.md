@@ -22,7 +22,7 @@ kbd.before_report do
 end
 ```
 
-```
+```ruby
 # Gets a block variable `output`
 kbd.output_report_changed do |output|
   # Do something
