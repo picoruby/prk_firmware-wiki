@@ -26,6 +26,9 @@ rgb = RGB.new(0, 0, 6)
 end
 ```
 
+Each LED position represents the LED’s physical [ x, y ] position on the keyboard.
+The expected range of values for [ x, y ] is the inclusive range [ 0..224, 0..64 ].
+
 ## Example
 
 [Amatelus73](https://shop.yushakobo.jp/en/products/consign_amatelus73) has 74 LEDs that starts from top right of the board
