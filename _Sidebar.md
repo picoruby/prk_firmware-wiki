@@ -19,6 +19,7 @@
     * [Keyboard#macro](/picoruby/prk_firmware/wiki/Keyboard-macro)
     * [Keyboard#send_key](/picoruby/prk_firmware/wiki/Keyboard-send_key)
     * [Keyboard#inject_switch](/picoruby/prk_firmware/wiki/Keyboard-inject_switch)
+  * [[BIOS mode]]
 * Other features
   * [[VIA and Remap]]
   * [[Rotary encoder]]
