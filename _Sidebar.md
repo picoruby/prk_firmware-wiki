@@ -1,5 +1,5 @@
 * Getting started
-  * [[Tutorial]]
+  * [[Tutorial]] [(ja)](/picoruby/prk_firmware/wiki/Tutorial_ja)
   * [[Basics of keymap.rb]]
   * [[Syntax checking of keymap.rb]]
 * Keyboard features
