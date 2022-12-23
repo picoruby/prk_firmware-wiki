@@ -10,7 +10,7 @@ Sparkfun Pro Micro RP2040を利用する場合、以下のページも役立ち�
 
 - [Releases](https://github.com/picoruby/prk_firmware/releases) から最新のリリースバイナリをダウンロードします。
 
-- ダウンロードしたファイルを展開すると、`prk_firmware-0.9.0-20210910-xxxxxxxx.uf2` とのようなファイルができるはずです。
+- ダウンロードしたファイルを展開すると、`prk_firmware-0.9.0-20210910-xxxxxxxx.uf2` のようなファイルができるはずです。
 
 - RP2040をBOOTSELモードでマウントし、uf2ファイルを `RPI-RP2` ドライブにドラッグアンドドロップします。
 
