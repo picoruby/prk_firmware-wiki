@@ -1,6 +1,6 @@
 * Getting started
   * [[Tutorial]] ([ja](Tutorial_ja))
-  * [[Basics of keymap.rb]]
+  * [[Basics of keymap.rb]] ([ja](Basics-of-keymap.rb_ja))
   * [[Syntax checking of keymap.rb]]
 * Keyboard features
   * [[Keycodes]]
