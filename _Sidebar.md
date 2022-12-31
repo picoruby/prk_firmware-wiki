@@ -3,7 +3,7 @@
   * [[Basics of keymap.rb]] ([ja](Basics-of-keymap.rb_ja))
   * [[Syntax checking of keymap.rb]] ([ja](Syntax-checking-of-keymap.rb_ja))
 * Keyboard features
-  * [[Keycodes]]
+  * [[Keycodes]] ([ja](Keycodes_ja))
     * [[Consumer key]]
     * [[Mouse key]]
   * [[Layers and mode key]]
