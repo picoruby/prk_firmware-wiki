@@ -13,4 +13,4 @@ ruby -c path/to/keymap.rb
 
 あるいは、上記のコマンドは修正すべき文法エラーを報告するかもしれません。
 
-もし `ruby` コマンドがないなら、[https://www.ruby-lang.org/en/documentation/installation/](https://www.ruby-lang.org/en/documentation/installation/) に従ってインストールしてください。
+もし `ruby` コマンドがないなら、[https://www.ruby-lang.org/ja/documentation/installation/](https://www.ruby-lang.org/ja/documentation/installation/) に従ってインストールしてください。
