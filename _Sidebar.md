@@ -4,8 +4,8 @@
   * [[Syntax checking of keymap.rb]] ([ja](Syntax-checking-of-keymap.rb_ja))
 * Keyboard features
   * [[Keycodes]] ([ja](Keycodes_ja))
-    * [[Consumer key]]
-    * [[Mouse key]]
+    * [[Consumer key]] ([ja](Consumer-key_ja))
+    * [[Mouse key]] ([ja](Mouse-key_ja))
   * [[Layers and mode key]]
   * [[Debounce]]
   * [[Composite key]]
