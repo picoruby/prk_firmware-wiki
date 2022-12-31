@@ -1,7 +1,7 @@
 * Getting started
   * [[Tutorial]] ([ja](Tutorial_ja))
   * [[Basics of keymap.rb]] ([ja](Basics-of-keymap.rb_ja))
-  * [[Syntax checking of keymap.rb]]
+  * [[Syntax checking of keymap.rb]] ([ja](Syntax-checking-of-keymap.rb_ja))
 * Keyboard features
   * [[Keycodes]]
     * [[Consumer key]]
