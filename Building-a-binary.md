@@ -41,7 +41,7 @@ Regardless of your platform, confirm that you have these requirements:
 
 - Submodules of pico-sdk. Make sure to run `git submodule update --init` in `pico-sdk` directory
   - You will sometimes need to upgrade the SDK due to inconsistency between the SDK and the newest PRK Firmware:
-    ```sh
+    ```console
     git pull origin master --recurse-submodules
     ```
 
@@ -53,20 +53,22 @@ Regardless of your platform, confirm that you have these requirements:
 
     (be sure to add `--recursive`)
 
-    ```sh
+    ```console
     git clone --recursive https://github.com/picoruby/prk_firmware.git
     ```
 
+    If you forgot to add `--recursive`, you can recover it by `git submodule update --init`
+
 - Setup for the first time
 
-    ```sh
+    ```console
     cd prk_firmware/
     rake setup
     ```
 
 - Upgrading the PRK
 
-    ```sh
+    ```console
     git pull origin master
     rake deep_clean
     rake setup
@@ -78,7 +80,7 @@ A binary that doesn't include a keymap is the same format as the releases of PRK
 
 - Build
 
-    ```sh
+    ```console
     rake
     ```
 
@@ -86,7 +88,7 @@ A binary that doesn't include a keymap is the same format as the releases of PRK
 
 - Clean the build
 
-    ```sh
+    ```console
     rake clean
     ```
 
@@ -98,14 +100,14 @@ If so, you can build a binary including your keymap.rb in this way:
 
 - Clone a keymap repository, for example, "meishi2" which is a 2x2 matrix card-shaped keyboard in `prk_firmware/keyboards` directory
 
-    ```sh
+    ```console
     cd keyboards
     git clone https://github.com/picoruby/prk_meishi2.git
     ```
 
 - Build
 
-    ```sh
+    ```console
     cd .. # back to prk_firmware/
     rake build_with_keymap[prk_meishi2]
     ```
@@ -114,7 +116,7 @@ If so, you can build a binary including your keymap.rb in this way:
 
 - Clean the build
 
-    ```sh
+    ```console
     rake clean_with_keymap[prk_meishi2]
     ```
 
@@ -124,14 +126,14 @@ You are likely having problems while developing PRK.
 
 These files may give you a clue regarding PRK build system:
 
-```
+```console
 prk_firmware
  ├── CMakeLists.txt
+ ├── Dockerfile      # If you want to use docker
  ├── Rakefile
- ├── lib
- │    └── CMakeLists.txt
- └── src
-      └── ruby
+ ├── compose.yml     # If you want to use docker
+ └── lib
+      └── picoruby
            └── Rakefile
 ```
 
