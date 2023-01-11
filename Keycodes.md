@@ -133,11 +133,11 @@
 |`:KC_MUTE`||Mute|No|
 |`:KC_VOLUP`||Volume Up|No|
 |`:KC_VOLDOWN`||Volume Down|No|
-|`:KC_`||Locking Caps Lock|No|
-|`:KC_`||Locking Num Lock|No|
-|`:KC_`||Locking Scroll Lock|No|
-|`:KC_`||Keypad `,`|No|
-|`:KC_`||Keypad `=` on AS/400 keyboards|No|
+|`:KC_LOCKING_CAPS_LOCK`||Locking Caps Lock|No|
+|`:KC_LOCKING_NUM_LOCK`||Locking Num Lock|No|
+|`:KC_LOCKING_SCROLL_LOCK`||Locking Scroll Lock|No|
+|`:KC_KP_COMMA`||Keypad `,`|No|
+|`:KC_KP_EQUAL_AS400`||Keypad `=` on AS/400 keyboards|No|
 |`:KC_INT1`||International 1|?|
 |`:KC_INT2`|`:KC_KANA`|International 2|?|
 |`:KC_INT3`||International 3|?|
@@ -168,6 +168,14 @@
 |`:KC_CLEAR_AGAIN`||Clear/Again|No|
 |`:KC_CRSEL`||CrSel/Props|No|
 |`:KC_EXSEL`||ExSel|No|
+|`:KC_LCTL`||Left Control|?|
+|`:KC_LSFT`||Left Shift|?|
+|`:KC_LALT`||Left Alt (Option)|?|
+|`:KC_LGUI`||Left GUI (Windows/Command/Meta key)|?|
+|`:KC_RCTL`||Right Control|?|
+|`:KC_RSFT`||Right Shift|?|
+|`:KC_RALT`||Right Alt (Option/AltGr)|?|
+|`:KC_RGUI`||Right GUI (Windows/Command/Meta key)|?|
 
 Keycodes with shift key.
 
