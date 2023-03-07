@@ -16,10 +16,8 @@ PicoRuby ecosystem doesn't support a specific 3rd party hardware in a form of a 
 
 - Trackball: AZ1UBALL or PIM447
 
-<ul style="display: flex;">
-  <li style="list-style: none;"><img src="images/AZ1UBALL_1.jpg" width="400" /></li>
-  <li style="list-style: none;"><img src="images/AZ1UBALL_2.jpg" width="400" /></li>
-</ul>
+<img src="images/AZ1UBALL_1.jpg" width="200" />
+<img src="images/AZ1UBALL_2.jpg" width="200" />
 
 This example includes a tip of scroll wheels and validity checking of the bus.
 You can use these techniques with SPI and ADC as well.
@@ -77,9 +75,7 @@ kbd.start!
 
 - Joystick: RKJXV122400R
 
-<ul style="display: flex;">
-  <li style="list-style: none;"><img src="images/Joystick_as_a_mouse.jpg" width="400" /></li>
-</ul>
+<img src="images/Joystick_as_a_mouse.jpg" width="200" />
 
 ```ruby
 require "adc"
@@ -128,9 +124,7 @@ kbd.start!
 
 - Sensor: PWM3360DM-T2QU on Keyball44
 
-<ul style="display: flex;">
-  <li style="list-style: none;"><img src="images/Keyball44.jpg" width="600" /></li>
-</ul>
+<img src="images/Keyball44.jpg" width="450" />
 
 This complicated example realizes to:
 - Change the keymap layer to `:mouse` and lock when you roll the trackball some amount
