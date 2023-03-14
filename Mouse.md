@@ -108,9 +108,10 @@ mouse.task do |mouse|
   x -= x_offset
   y -= y_offset
   USB.merge_mouse_report(0,
-                         # Ignore less than 300 to avoid drifting
-                         x.abs < 300 ? 0 : x / 100,
-                         y.abs < 300 ? 0 : y / -100,
+                         # Ignore less than 300 to avoid drifting and
+                         # clamp the absolute value devided by 100 within 100
+                         x.abs < 300 ? 0 : (x /  100).clamp(-100, 100),
+                         y.abs < 300 ? 0 : (y / -100).clamp(-100, 100),
                          0,
                          0)
 end
