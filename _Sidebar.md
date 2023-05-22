@@ -5,7 +5,7 @@
 * Keyboard features
   * [[Keycodes]] ([ja](Keycodes_ja))
     * [[Consumer key]] ([ja](Consumer-key_ja))
-    * [[Mouse]] ([ja](Mouse_ja))
+  * [[Mouse]] ([ja](Mouse_ja))
   * [[Layers and mode key]]
   * [[Debounce]]
   * [[Composite key]]

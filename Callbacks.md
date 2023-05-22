@@ -17,7 +17,7 @@ Take a good look at the difference in parameters.
 
 ```ruby
 # Neither method parameter nor block parameter
-kbd.before_report do
+kbd.before_report do |keyboard|
   # Do something
 end
 ```
@@ -31,14 +31,14 @@ end
 
 ```ruby
 # Neither method parameter nor block parameter
-kbd.on_start do
+kbd.on_start do |keyboard|
   # Do something
 end
 ```
 
 ```ruby
 # Takes a parameter (`:KEYCODE` in this case) before the block
-kbd.signal_partner :KEYCODE do
+kbd.signal_partner :KEYCODE do |keyboard|
   # Do something on the partner half when :KEYCODE is tapped
   # Naturally, this works only if kbd.split == true
 end
