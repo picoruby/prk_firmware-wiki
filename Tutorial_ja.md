@@ -16,9 +16,9 @@ Sparkfun Pro Micro RP2040を利用する場合、以下のページも役立ち�
 
   ![](images/drag_and_drop_1.png)
 
-- 数秒後に `RPI-RP2` ドライブが消え、かわりに `PRKFirmware` ドライブが自動的にマウントされます。
+- 数秒後に `RPI-RP2` ドライブが消え、かわりに `PRK DRIVE` ドライブが自動的にマウントされます。
 
-- あなたの `keymap.rb` を `PRKFirmware` ドライブにドラッグアンドドロップします。
+- あなたの `keymap.rb` を `PRK DRIVE` ドライブにドラッグアンドドロップします。
 
   ![](images/drag_and_drop_2.png)
 
@@ -26,15 +26,15 @@ PRK Firmware は自動的に `keymap.rb` をリロードします。楽しんで
 
 ### 知っておきたいポイント
 
-- `keymap.rb` をドラッグアンドドロップしても、`PRKFirmware` ドライブはアンマウントされません。
+- `keymap.rb` をドラッグアンドドロップしても、`PRK DRIVE` ドライブはアンマウントされません。
 - `keymap.rb` のリロードには、`keymap.rb` の内容や回路次第で5～7秒程度かかります。
 - 新しい `keymap.rb` が正常にリロードできた場合でも、何も起きていないように見えることがあります（特にRGBLEDを持たないキーボードの場合）。しかし、 `keymap.rb` に問題がなければ新しい設定が適用されているはずです。
 - もし`keymap.rb` が機能しない場合、[[Debug print]] ページが役立つかもしれません。
 
 ### `keymap.rb` の編集
 
-- 2回目以降は、`PRKFirmware` ドライブにある既存の `keymap.rb` を上書きします。
-- `PRKFirmware` ドライブの `keymap.rb` を直接編集することもできますが、予期せぬトラブルを防ぐため、PCのディスクに保存した `keymap.rb` を編集し、それを `PRKFirmware` ドライブにドラッグアンドドロップすることをお勧めします。
+- 2回目以降は、`PRK DRIVE` ドライブにある既存の `keymap.rb` を上書きします。
+- `PRK DRIVE` ドライブの `keymap.rb` を直接編集することもできますが、予期せぬトラブルを防ぐため、PCのディスクに保存した `keymap.rb` を編集し、それを `PRK DRIVE` ドライブにドラッグアンドドロップすることをお勧めします。
 
 ### PRK Firmware のアップグレード
 

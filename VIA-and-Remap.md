@@ -63,10 +63,10 @@ Copy the values of "Vendor ID", "Product ID" and "PRODUCT" and paste them at the
 
 Note that this line must NOT include any other letter except a line feed.
 
-Eventually, your "PRKFirmware" drive should look like this:
+Eventually, your "PRK DRIVE" drive should look like this:
 
 ```
-PRKFirmware
+PRK DRIVE
 ├── keymap.rb
 ├── prk-conf.txt
 └── via_map.txt  # This is going to show after configuring on Remap
@@ -86,7 +86,7 @@ The configure page of Remap ([https://remap-keys.app/configure](https://remap-ke
 
 It is recommended to save a copy of `keymap.rb`, `prk-conf.txt` and `via_map.txt` (automatically created by configuring a keymap in Remap then you can obtain the latest one after one more rebooting the board) on your local PC because upgrading PRK Firmware is going to remove them.
 
-If you have those three files, you no longer need even Remap the next time. Just dragging and dropping them into "PRKFirmware" drive restores your keymap (unless there is any breaking change in the new PRK Firmware🤞).
+If you have those three files, you no longer need even Remap the next time. Just dragging and dropping them into "PRK DRIVE" drive restores your keymap (unless there is any breaking change in the new PRK Firmware🤞).
 
 ## Layer
 

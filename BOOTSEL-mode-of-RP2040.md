@@ -7,7 +7,7 @@
 
 ## Description
 
-When you want to install a new uf2 file of PRK Firmware, make sure the mass storage drive is `RPI-RP2`, not `PRKFirmware`, which means RP2040 booted into BOOTSEL mode.
+When you want to install a new uf2 file of PRK Firmware, make sure the mass storage drive is `RPI-RP2`, not `PRK DRIVE`, which means RP2040 booted into BOOTSEL mode.
 
 There are three ways of rebooting RP2040 into BOOTSEL mode.
 
