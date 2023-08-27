@@ -6,7 +6,7 @@
   * [[Keycodes]] ([ja](Keycodes_ja))
     * [[Consumer key]] ([ja](Consumer-key_ja))
   * [[Mouse]] ([ja](Mouse_ja))
-  * [[Layers and mode key]]
+  * [[Layers and mode key]] ([ja](Layers-and-mode-key_ja))
   * [[Debounce]]
   * [[Composite key]]
   * [[Split-type keyboard]]
