@@ -262,6 +262,10 @@ col0.write(0)
 kbd.start!
 ```
 
+### Software (Bitbang) SPI
+
+You can also configure a software SPI. See the example keymap.rb of [picoruby/prk_cocot46](https://github.com/picoruby/prk_cocot46plus)
+
 ## Split-type
 
 A keyboard, that is a split-type along with I2C, SPI, or ADC peripheral device, won't work if the peripheral is on the *partner* half.
