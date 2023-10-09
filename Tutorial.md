@@ -6,6 +6,8 @@ The following page is also helpful if you use Sparkfun Pro Micro RP2040:
 
 [https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide](https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide)
 
+See [[Microcontroller-boards-and-Keyboards]] for other available microcontroller boards and keyboards.
+
 ## Let's try it!
 
 - Download the newest release binary from [Releases](https://github.com/picoruby/prk_firmware/releases)

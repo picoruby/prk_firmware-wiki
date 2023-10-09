@@ -6,6 +6,8 @@ Sparkfun Pro Micro RP2040を利用する場合、以下のページも役立ち�
 
 [https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide](https://learn.sparkfun.com/tutorials/pro-micro-rp2040-hookup-guide)
 
+その他、利用可能なマイコンボードやキーボードは [[Microcontroller-boards-and-Keyboards]] を参照してください。
+
 ## やってみよう！
 
 - [Releases](https://github.com/picoruby/prk_firmware/releases) から最新のリリースバイナリをダウンロードします。
