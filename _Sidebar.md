@@ -29,6 +29,7 @@
   * [[Sounder]]
     * [[Music Macro language]]
   * [[BOOTSEL mode of RP2040]]
+  * [[require]]
 * Examples
   * [[Microcontroller boards and Keyboards]]
 * Development
