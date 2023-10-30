@@ -20,7 +20,7 @@ You can reuse a Ruby script by taking advantage of that.
 - The library file has to have `.rb` or `.mrb` extention. eg: `my_library.rb`
 - `require` method supplements an extension, so just write `require "my_library"`
 - `load` method only accepts a full path name. eg: `load "/path/to/my_library.rb"`
-- `require` method does not load the same library more than once while `load` method does the library as many times as you call
+- `require` does not load the same library more than once while `load` does as many times as you call
 - `.rb` file will be compiled into mruby VM code in microcontrller on the fly
   - A large Ruby file is more likely to cause Out of Memory
   - In such case, precompled mrb file will help
