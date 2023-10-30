@@ -9,9 +9,9 @@ This page explains the loading external libraries feature introduced in 0.9.23.
 
 ## Description
 
-CRuby loads external libraries using `Kernel.#require` method.
-Likewise, PicoRuby has `require` and `load` method.
-You can reuse a Ruby script by taking advantage of that.
+CRuby loads external libraries using `Kernel.#require` and `Kernel.#load`.
+Likewise, PicoRuby has `require` and `load`.
+You can reuse a Ruby script by those methods.
 
 ## Gist
 
