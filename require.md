@@ -10,7 +10,7 @@ This page explains the loading external libraries feature introduced in 0.9.23.
 ## Description
 
 CRuby loads external libraries using `Kernel.#require` method.
-Likewise, PicoRuby has `require` method.
+Likewise, PicoRuby has `require` and `load` method.
 You can reuse a Ruby script by taking advantage of that.
 
 ## Gist
@@ -18,7 +18,9 @@ You can reuse a Ruby script by taking advantage of that.
 - Put your library files in the `/lib` directory in "PRK DRIVE"
   - It may be easier to understand if you say `$LOAD_PATH` is `["/lib"]`
 - The library file has to have `.rb` or `.mrb` extention. eg: `my_library.rb`
-- `require` method ignores the extension, so just write `require "my_library"`
+- `require` method supplements an extension, so just write `require "my_library"`
+- `load` method only accepts a full path name. eg: `load "/path/to/my_library.rb"`
+- `require` method does not load the same library more than once while `load` method does the library as many times as you call
 - `.rb` file will be compiled into mruby VM code in microcontrller on the fly
   - A large Ruby file is more likely to cause Out of Memory
   - In such case, precompled mrb file will help
