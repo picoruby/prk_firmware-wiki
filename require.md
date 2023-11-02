@@ -74,7 +74,7 @@ end
 ```
 
 ```ruby
-# filepath: /keyboard.rb
+# filepath: /keymap.rb
 require "adns5050"
 
 kbd = Keyboard.new
