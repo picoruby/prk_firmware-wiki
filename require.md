@@ -30,59 +30,7 @@ You can reuse a Ruby script by those methods.
 
 ## Example
 
-```ruby
-# Library for ADNS-5050 optical sensor
-# filepath: /lib/adns5050.rb
-require "mouse"
-require "spi"
-
-class ADNS5050
-  def initialize(sck_pin:, copi_pin:, cipo_pin:, cs_pin:)
-    spi = SPI.new(unit: :BITBANG, sck_pin: sck_pin, copi_pin: copi_pin, cipo_pin: cipo_pin, cs_pin: cs_pin)
-    mouse = Mouse.new(driver: spi)
-    mouse.task do |mouse, keyboard|
-      next if mouse.driver.power_down
-      y, x = mouse.driver.select do |spi|
-        spi.write(0x63) # Motion_Burst
-        spi.read(2).bytes
-      end
-      if 0 < x || 0 < y
-        x = 0x7F < x ? (~x & 0xff) + 1 : -x
-        y = 0x7F < y ? (~y & 0xff) + 1 : -y
-        if keyboard.layer == :lower
-          x = 0 < x ? 1 : (x < 0 ? -1 : x)
-          y = 0 < y ? 1 : (y < 0 ? -1 : y)
-          USB.merge_mouse_report(0, 0, 0, y, -x)
-        else
-          mod = keyboard.modifier
-          if 0 < mod & 0b00100010
-            # Shift key pressed -> Horizontal or Vertical only
-            x.abs < y.abs ? x = 0 : y = 0
-          end
-          if 0 < mod & 0b01000100
-            # Alt key pressed -> Fix the move amount
-            x = 0 < x ? 2 : (x < 0 ? -2 : x)
-            y = 0 < y ? 2 : (y < 0 ? -2 : y)
-          end
-          USB.merge_mouse_report(0, y, x, 0, 0)
-        end
-      end
-    end
-    return mouse
-  end
-end
-```
-
-```ruby
-# filepath: /keyboard.rb
-require "adns5050"
-
-kbd = Keyboard.new
-
-kbd.append ADNS5050.new(sck_pin: 23, copi_pin: 8, cipo_pin: 8, cs_pin: 9)
-
-kbd.start!
-```
+See `lib/adns5050.rb` and `keymap.rb` in [picoruby/prk_cocot46plus](https://github.com/picoruby/prk_cocot46plus).
 
 ## Pro tip
 
